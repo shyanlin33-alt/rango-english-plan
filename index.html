@@ -29,7 +29,7 @@ document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelect
 day.onchange=e=>{cur=e.target.value;save();render()};
 taskBox.onchange=e=>{if(e.target.dataset.i!==undefined){getDay().tasks[e.target.dataset.i]=e.target.checked;save();render()}};
 quizBox.onclick=e=>{if(e.target.dataset.i!==undefined){getDay().answers[e.target.dataset.i]=e.target.dataset.a;save();render()}};
-checkBtn.onclick=()=>{const d=DATA[cur],s=getDay();let n=0;d.quiz.forEach((q,i)=>{if(s.answers[i]===q[2])n++});result.textContent=`本次做对 ${n}/${d.quiz.length} 题。错的写进错题本。`};
+checkBtn.onclick=()=>{const d=DATA[cur],s=getDay();let n=0;let wrong=[];d.quiz.forEach((q,i)=>{const mine=s.answers[i]||"没选";if(mine===q[2]){n++}else{wrong.push(`第${i+1}题：正确答案是 ${q[2]}，你选的是 ${mine}`)}});result.innerHTML=wrong.length?`本次做对 ${n}/${d.quiz.length} 题。<br><br>错题：<br>${wrong.join("<br>")}<br><br>把这些题写进错题本。`:`本次做对 ${n}/${d.quiz.length} 题。全对，今天很稳。`};
 recordBtn.onclick=()=>{getDay().record=true;save();render();alert("已记录朗读。")};
 saveMistake.onclick=()=>{getDay().mistake=mistake.value.trim();save();render();alert("错题已保存。")};
 saveScore.onclick=()=>{store.score=score.value.trim();save();render()};

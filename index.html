@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>然哥英语提分小程序</title>
+<style>
+body{margin:0;background:#f5f7f2;color:#1d2524;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}
+header{padding:20px 16px;background:#e8f4f1;border-bottom:1px solid #d9e1dc}
+h1{margin:0;font-size:26px}h2{font-size:18px;margin:0 0 10px}.sub{color:#61706d;margin:6px 0 0}
+nav{position:sticky;top:0;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:8px;background:#f5f7f2;border-bottom:1px solid #d9e1dc}
+button{border:0;border-radius:8px;min-height:42px;font-weight:800;font-size:15px}
+nav button{background:#fff;border:1px solid #d9e1dc;color:#61706d}.on{background:#0f766e!important;color:#fff!important}
+main{max-width:760px;margin:auto;padding:12px}.page{display:none}.page.on{display:block}
+.card{background:#fff;border:1px solid #d9e1dc;border-radius:8px;padding:15px;margin-bottom:12px;box-shadow:0 8px 20px #0001}
+select,input,textarea{width:100%;box-sizing:border-box;border:1px solid #d9e1dc;border-radius:8px;padding:10px;font:inherit}
+.task{display:flex;gap:10px;border-top:1px solid #edf1ee;padding:10px 0}.task:first-child{border-top:0}.task input{width:22px}
+.primary{width:100%;background:#0f766e;color:#fff;margin-top:10px}.minor{width:100%;background:#355c5a;color:#fff;margin-top:10px}
+.word{border:1px solid #d9e1dc;border-radius:8px;padding:10px;margin:8px 0;background:#fbfcfa}.word b{font-size:20px}.cn{color:#0f766e;font-weight:800}
+.q{border-top:1px solid #edf1ee;padding:10px 0}.q:first-child{border-top:0}.opt{display:block;width:100%;margin:8px 0;background:#fff;border:1px solid #d9e1dc}.sel{background:#e8f4f1;border-color:#0f766e}
+.ok{background:#e7f7df}.bad{background:#fff1e8}.quote{background:#fff1e8;padding:12px;border-radius:8px;font-weight:800}
+</style>
+</head>
+<body>
+<header>
+<h1>然哥英语提分</h1>
+<p class="sub">八下英语 · 第1周 · 每晚8:30-9:20，只做今天这一页。</p>
+</header>
+
+<nav>
+<button class="tab on" data-p="today">今天</button>
+<button class="tab" data-p="words">单词</button>
+<button class="tab" data-p="quiz">练习</button>
+<button class="tab" data-p="parent">家长</button>
+</nav>
+
+<main>
+<section id="today" class="page on">
+<div class="card">
+<h2>选择今天</h2>
+<select id="day"></select>
+</div>
+<div class="card">
+<h2 id="title"></h2>
+<div id="tasks"></div>
+</div>
+<div class="card">
+<h2>朗读录音</h2>
+<p>用手机录音机读今天单词和句子，录完回来点按钮。</p>
+<button class="primary" id="rec">我已完成朗读录音</button>
+</div>
+<div class="card">
+<h2>错题本</h2>
+<textarea id="mistake" rows="5" placeholder="例：5月27日 语法题，He ___ a student. 我写are，正确是is。错因：语法不会。"></textarea>
+<button class="minor" id="saveMistake">保存错题</button>
+</div>
+</section>
+
+<section id="words" class="page">
+<div class="card">
+<h2>今日20个单词</h2>
+<p>先看英文说中文，再遮住中文自测。不会的词写到本子上。</p>
+<div id="wordBox"></div>
+</div>
+</section>
+
+<section id="quiz" class="page">
+<div class="card">
+<h2>今日语法</h2>
+<div id="grammar"></div>
+</div>
+<div class="card">
+<h2>今日5道题</h2>
+<div id="quizBox"></div>
+<button class="primary" id="check">提交练习</button>
+<p id="result"></p>
+</div>
+</section>
+
+<section id="parent" class="page">
+<div class="card">
+<h2>家长5分钟检查</h2>
+<div id="parentBox"></div>
+</div>
+<div class="card">
+<h2>周六小测分数</h2>
+<input id="score" type="number" min="0" max="100" placeholder="例如 62">
+<button class="minor" id="saveScore">保存分数</button>
+</div>
+<div class="card">
+<p class="quote">今天不用学很多，把单词、录音、错题做完就算赢。我们先把基础分稳稳捡回来。</p>
+</div>
+</section>
+</main>
+
+<script>
+const D={
+mon:{n:"周一",t:"周一：be动词",g:"be动词就是 am/is/are。I用am；he/she/it/单个人用is；you/we/they/多个人用are。",w:"student学生 teacher老师 school学校 class班级 friend朋友 family家庭 father爸爸 mother妈妈 sister姐妹 brother兄弟 name名字 age年龄 boy男孩 girl女孩 book书 pen钢笔 desk桌子 chair椅子 room房间 home家".split(" "),q:[["I ___ a student.",["am","is","are"],"am"],["She ___ my friend.",["am","is","are"],"is"],["They ___ happy.",["am","is","are"],"are"],["My mother ___ busy.",["am","is","are"],"is"],["We ___ in class.",["am","is","are"],"are"]]},
+tue:{n:"周二",t:"周二：一般现在时",g:"一般现在时表示经常做。I/you/we/they用动词原形；he/she/it后面动词一般加s。",w:"like喜欢 love爱 have有 go去 come来 do做 make制作 play玩 read读 write写 listen听 speak说 say说 tell告诉 help帮助 know知道 think认为 want想要 need需要 study学习".split(" "),q:[["I ___ English.",["study","studies","studying"],"study"],["He ___ football.",["play","plays","playing"],"plays"],["They ___ books.",["read","reads","reading"],"read"],["She ___ to school.",["go","goes","going"],"goes"],["We ___ help.",["need","needs","needed"],"need"]]},
+wed:{n:"周三",t:"周三：名词单复数",g:"一个东西用单数，两个或更多用复数。大多数名词复数加s，box/class这类常加es。",w:"happy开心 sad难过 good好的 bad坏的 big大的 small小的 long长的 short短的 new新的 old旧的 nice好的 busy忙的 tired累的 easy容易 difficult困难 important重要 beautiful漂亮 young年轻 strong强壮 careful小心".split(" "),q:[["two ___",["book","books","bookes"],"books"],["three ___",["box","boxs","boxes"],"boxes"],["one ___",["students","student","studentes"],"student"],["many ___",["teacher","teachers","teacheres"],"teachers"],["five ___",["classes","class","classs"],"classes"]]},
+thu:{n:"周四",t:"周四：代词",g:"代词就是代替人或东西。I是我，me是别人对我做动作，my是我的。",w:"morning早上 afternoon下午 evening晚上 today今天 tomorrow明天 yesterday昨天 week周 month月 year年 day天 time时间 hour小时 minute分钟 breakfast早餐 lunch午餐 dinner晚餐 food食物 water水 milk牛奶 rice米饭".split(" "),q:[["___ am a student.",["I","Me","My"],"I"],["Please help ___.",["I","me","my"],"me"],["This is ___ pen.",["I","me","my"],"my"],["___ is my friend.",["He","Him","His"],"He"],["I like ___.",["he","him","his"],"him"]]},
+fri:{n:"周五",t:"周五：介词和连词",g:"介词表示位置、时间、方向；连词连接词和句子。先记常见搭配，不要硬翻译。",w:"in在里面 on在上面 under在下面 at在 from来自 to到 with和 for为了 about关于 after之后 before之前 because因为 and和 but但是 or或者 so所以 if如果 when当时 where哪里 why为什么".split(" "),q:[["The book is ___ the desk.",["on","and","because"],"on"],["I go ___ school.",["to","but","why"],"to"],["I like apples ___ bananas.",["and","in","where"],"and"],["I am tired ___ happy.",["but","on","from"],"but"],["I stay home ___ it rains.",["because","or","at"],"because"]]},
+sat:{n:"周六",t:"周六：小测试",g:"今天不学新内容，只测试。测完把错的写下来。",w:[],q:[["She ___ a teacher.",["am","is","are"],"is"],["He ___ English.",["like","likes","liking"],"likes"],["two ___",["book","books","bookes"],"books"],["Please help ___.",["I","me","my"],"me"],["The bag is ___ the chair.",["under","and","why"],"under"]]},
+sun:{n:"周日",t:"周日：复盘补漏",g:"今天只做三件事：重背错词、重做错题、写下周目标。",w:[],q:[["周日最重要的事是什么？",["学新难题","复盘错题","玩手机"],"复盘错题"],["错词应该怎么处理？",["不管它","重新背","只看一眼"],"重新背"],["错题本要写什么？",["错因","歌词","游戏名"],"错因"]]}
+};
+const task=["单词10分钟：背20个词，不会的写下来。","朗读10分钟：读今天单词和句子，必须出声。","语法15分钟：只学今天一个点，抄3个例句。","练习10分钟：做5道题，马上看对错。","错题5分钟：错1-3题写错题本。"];
+let S=JSON.parse(localStorage.rango||"{}"),cur=S.cur||"mon";
+function ds(){S.days??={};S.days[cur]??={task:{},ans:{},rec:false,mis:""};return S.days[cur]}
+function save(){S.cur=cur;localStorage.rango=JSON.stringify(S)}
+function render(){
+day.innerHTML=Object.keys(D).map(k=>`<option value="${k}">${D[k].n}</option>`).join("");day.value=cur;title.textContent=D[cur].t;
+tasks.innerHTML=task.map((x,i)=>`<label class="task"><input type="checkbox" ${ds().task[i]?"checked":""} data-i="${i}"><span>${x}</span></label>`).join("");
+mistake.value=ds().mis||"";
+let words=D[cur].w.length?D[cur].w:["周六测试周一到周五100个词","周日重背错词，不学新词"];
+wordBox.innerHTML=words.map(x=>`<div class="word"><b>${x.replace(/[\\u4e00-\\u9fa5].*/,"")}</b><div class="cn">${(x.match(/[\\u4e00-\\u9fa5].*/)||["复习"])[0]}</div></div>`).join("");
+grammar.innerHTML=`<p>${D[cur].g}</p><ul><li>I am a student.</li><li>She likes English.</li><li>The book is on the desk.</li></ul>`;
+quizBox.innerHTML=D[cur].q.map((q,i)=>`<div class="q"><b>${i+1}. ${q[0]}</b>${q[1].map(o=>`<button class="opt ${ds().ans[i]==o?"sel":""}" data-i="${i}" data-a="${o}">${o}</button>`).join("")}</div>`).join("");
+let done=Object.values(ds().task).filter(Boolean).length;
+parentBox.innerHTML=`<p class="${done>=5?'ok':'bad'}">今日任务：${done}/5</p><p class="${ds().rec?'ok':'bad'}">朗读录音：${ds().rec?'已完成':'未完成'}</p><p class="${ds().mis?'ok':'bad'}">错题本：${ds().mis?'已保存':'未填写'}</p><p>周测分数：${S.score||"周六再填"}</p>`;
+score.value=S.score||"";
+}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab,.page").forEach(x=>x.classList.remove("on"));b.classList.add("on");document.getElementById(b.dataset.p).classList.add("on")});
+day.onchange=e=>{cur=e.target.value;save();render()};
+tasks.onchange=e=>{if(e.target.dataset.i){ds().task[e.target.dataset.i]=e.target.checked;save();render()}};
+quizBox.onclick=e=>{if(e.target.dataset.i){ds().ans[e.target.dataset.i]=e.target.dataset.a;save();render()}};
+check.onclick=()=>{let n=0;D[cur].q.forEach((q,i)=>{if(ds().ans[i]==q[2])n++});result.textContent=`本次做对 ${n}/${D[cur].q.length} 题。错的写进错题本。`};
+rec.onclick=()=>{ds().rec=true;save();render();alert("已记录朗读。")};
+saveMistake.onclick=()=>{ds().mis=mistake.value.trim();save();render();alert("错题已保存。")};
+saveScore.onclick=()=>{S.score=score.value.trim();save();render()};
+render();
+</script>
+</body>
+</html>

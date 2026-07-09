@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>然哥英语提分小程序｜第1周-第4周连续周计划版</title>
+  <title>然哥英语提分小程序｜第1周-第5周连续周计划版</title>
   <style>
 :root {
   --bg: #f5f7f2;
@@ -162,9 +162,9 @@ footer { padding: 12px 18px 24px; text-align: center; }
 <body>
   <header class="app-header">
     <div>
-      <p class="eyebrow" id="headerWeekLabel">八下英语 · 第1周-第4周连续周计划</p>
+      <p class="eyebrow" id="headerWeekLabel">八下英语 · 第1周-第5周连续周计划</p>
       <h1>然哥英语提分</h1>
-      <p class="sub">真正的第1周-第4周连续版：一个入口切四周，每天晚上 8:30-9:20。</p>
+      <p class="sub">真正的第1周-第5周连续版：一个入口切四周，每天晚上 8:30-9:20。</p>
     </div>
     <div class="score-card">
       <span id="doneCount">0</span>
@@ -182,7 +182,7 @@ footer { padding: 12px 18px 24px; text-align: center; }
   <main>
     <section id="today" class="view active">
       <div class="panel">
-        <h2 id="weekTitle">第1周-第4周连续周计划</h2>
+        <h2 id="weekTitle">第1周-第5周连续周计划</h2>
         <p class="plain" id="weekHint">先选第几周，再选周几。</p>
         <label class="label" for="weekSelect">选择第几周</label>
         <select id="weekSelect"></select>
@@ -249,7 +249,7 @@ footer { padding: 12px 18px 24px; text-align: center; }
     <section id="parent" class="view">
       <div class="panel">
         <h2>第1周 + 第2周 + 第3周 + 第4周连续进度</h2>
-        <p class="plain">家长只看这一块，就知道四周有没有接上。上面切到第1周、第2周、第3周或第4周，可以分别查看每天细节。</p>
+        <p class="plain">家长只看这一块，就知道五周有没有接上。上面切到第1周、第2周、第3周、第4周或第5周，可以分别查看每天细节。</p>
         <div id="continuitySummary" class="continuity-grid"></div>
       </div>
 
@@ -269,14 +269,14 @@ footer { padding: 12px 18px 24px; text-align: center; }
 
       <div class="panel">
         <h2>学习进度同步</h2>
-        <p class="plain">换手机、换浏览器前，先下载一份连续四周学习记录。新版会把第1周、第2周、第3周、第4周放在一个文件里。旧第1周、旧第2周连续版、旧第3周独立版、旧第4周单独内容备份也可以导入。</p>
+        <p class="plain">换手机、换浏览器前，先下载一份连续五周学习记录。新版会把第1周、第2周、第3周、第4周、第5周放在一个文件里。旧第1周、旧第2周连续版、旧第3周独立版、旧第4周单独内容备份也可以导入。</p>
         <button class="primary" id="downloadBackup">一键下载学习记录</button>
         <button class="secondary" id="chooseBackup">一键导入学习记录</button>
         <input id="backupFile" type="file" accept=".json,application/json" hidden>
         <p class="plain">如果微信里不方便传文件，也可以用下面的进度码当备用办法。</p>
         <button class="secondary" id="exportProgress">生成并复制进度码</button>
         <label class="label sync-label" for="progressCode">进度码</label>
-        <textarea id="progressCode" rows="6" placeholder="孩子手机：点上面的按钮生成连续四周进度码。
+        <textarea id="progressCode" rows="6" placeholder="孩子手机：点上面的按钮生成连续五周进度码。
 家长手机：把孩子发来的进度码粘贴到这里，再点导入。"></textarea>
         <button class="primary" id="importProgress">导入到这台手机</button>
         <p id="syncStatus" class="result"></p>
@@ -3640,25 +3640,1314 @@ const week4Data = {
   }
 };
 
+const week5Data = {
+  "mon": {
+    "label": "周一",
+    "title": "周一：现在完成时，先认 have / has + done",
+    "words": [
+      [
+        "already",
+        "已经",
+        "al-read-y",
+        "I have already finished."
+      ],
+      [
+        "yet",
+        "还；已经",
+        "yet",
+        "Have you finished yet?"
+      ],
+      [
+        "ever",
+        "曾经",
+        "ev-er",
+        "Have you ever tried?"
+      ],
+      [
+        "never",
+        "从不",
+        "nev-er",
+        "I have never been there."
+      ],
+      [
+        "just",
+        "刚刚",
+        "just",
+        "She has just left."
+      ],
+      [
+        "since",
+        "自从",
+        "since",
+        "I have studied since Monday."
+      ],
+      [
+        "for",
+        "达；计",
+        "for",
+        "I have waited for an hour."
+      ],
+      [
+        "finish",
+        "完成",
+        "fin-ish",
+        "I have finished my work."
+      ],
+      [
+        "start",
+        "开始",
+        "start",
+        "The class has started."
+      ],
+      [
+        "learn",
+        "学习",
+        "learn",
+        "I have learned ten words."
+      ],
+      [
+        "visit",
+        "参观",
+        "vis-it",
+        "We have visited the museum."
+      ],
+      [
+        "see",
+        "看见",
+        "see",
+        "I have seen the film."
+      ],
+      [
+        "seen",
+        "看过",
+        "seen",
+        "She has seen it."
+      ],
+      [
+        "do",
+        "做",
+        "do",
+        "I do my homework."
+      ],
+      [
+        "done",
+        "做完",
+        "done",
+        "I have done my homework."
+      ],
+      [
+        "write",
+        "写",
+        "write",
+        "Write the answer."
+      ],
+      [
+        "written",
+        "写过；写完",
+        "writ-ten",
+        "He has written five sentences."
+      ],
+      [
+        "be",
+        "是；在",
+        "be",
+        "Be careful."
+      ],
+      [
+        "been",
+        "去过；曾是",
+        "been",
+        "I have been to Guangzhou."
+      ],
+      [
+        "experience",
+        "经历",
+        "ex-pe-ri-ence",
+        "It was a useful experience."
+      ]
+    ],
+    "readingLines": [
+      "I have already finished today's word list.",
+      "Ran has just recorded his reading.",
+      "Have you written down your mistakes yet?",
+      "I have never missed the Sunday review.",
+      "We have studied English for four weeks.",
+      "She has learned twenty new words.",
+      "He has seen this question before.",
+      "They have visited the school library.",
+      "Small steps have helped me improve.",
+      "I have not finished the reading yet."
+    ],
+    "grammar": {
+      "rule": "现在完成时表示“已经做过”或“过去开始、现在仍有关”。I / you / we / they 用 have，he / she 用 has，后面接过去分词。",
+      "examples": [
+        "He ___ finished his homework.",
+        "I have ___ the book.",
+        "Have you finished ___?"
+      ]
+    },
+    "quiz": [
+      [
+        "He ___ finished his homework.",
+        [
+          "A. have",
+          "B. has",
+          "C. is"
+        ]
+      ],
+      [
+        "I have ___ the book.",
+        [
+          "A. see",
+          "B. saw",
+          "C. seen"
+        ]
+      ],
+      [
+        "Have you finished ___?",
+        [
+          "A. yet",
+          "B. yesterday",
+          "C. tomorrow"
+        ]
+      ]
+    ],
+    "answers": "1 has；2 seen；3 yet。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "选词填空：has / have / seen / done / yet。",
+      "questions": [
+        "Ran 1. ___ studied English for four weeks. He has 2. ___ many short passages. He has 3. ___ his word work today, but he has not recorded his voice 4. ___. His parents 5. ___ checked the record."
+      ],
+      "answers": "1 has；2 seen；3 done；4 yet；5 have。"
+    },
+    "parent": "问一句：he 后面用 have 还是 has？再抽查 already、yet、seen、done、written。"
+  },
+  "tue": {
+    "label": "周二",
+    "title": "周二：to do 和 doing，先记常见搭配",
+    "words": [
+      [
+        "want",
+        "想要",
+        "want",
+        "I want to improve."
+      ],
+      [
+        "need",
+        "需要",
+        "need",
+        "I need to practise."
+      ],
+      [
+        "plan",
+        "计划",
+        "plan",
+        "I plan to review."
+      ],
+      [
+        "hope",
+        "希望",
+        "hope",
+        "I hope to pass."
+      ],
+      [
+        "decide",
+        "决定",
+        "de-cide",
+        "I decide to start."
+      ],
+      [
+        "try",
+        "尝试",
+        "try",
+        "Try to read it."
+      ],
+      [
+        "remember",
+        "记得",
+        "re-mem-ber",
+        "Remember to record."
+      ],
+      [
+        "forget",
+        "忘记",
+        "for-get",
+        "Do not forget to check."
+      ],
+      [
+        "learn",
+        "学会",
+        "learn",
+        "Learn to use the word."
+      ],
+      [
+        "agree",
+        "同意",
+        "a-gree",
+        "I agree to help."
+      ],
+      [
+        "enjoy",
+        "喜欢；享受",
+        "en-joy",
+        "I enjoy reading."
+      ],
+      [
+        "finish",
+        "完成",
+        "fin-ish",
+        "Finish writing first."
+      ],
+      [
+        "keep",
+        "继续",
+        "keep",
+        "Keep trying."
+      ],
+      [
+        "practice",
+        "练习",
+        "prac-tice",
+        "Practise speaking."
+      ],
+      [
+        "mind",
+        "介意",
+        "mind",
+        "Do you mind waiting?"
+      ],
+      [
+        "reading",
+        "阅读",
+        "read-ing",
+        "Reading helps me."
+      ],
+      [
+        "speaking",
+        "说",
+        "speak-ing",
+        "Keep speaking."
+      ],
+      [
+        "writing",
+        "写作",
+        "writ-ing",
+        "Finish writing."
+      ],
+      [
+        "checking",
+        "检查",
+        "check-ing",
+        "Keep checking answers."
+      ],
+      [
+        "improve",
+        "提高",
+        "im-prove",
+        "I want to improve."
+      ]
+    ],
+    "readingLines": [
+      "I want to improve my English.",
+      "I need to finish today's work.",
+      "Ran plans to review after dinner.",
+      "Remember to record your voice.",
+      "Do not forget to write down mistakes.",
+      "I enjoy reading short stories.",
+      "Please finish writing five sentences.",
+      "Keep trying when a question is hard.",
+      "Practise speaking for ten minutes.",
+      "I hope to get fewer questions wrong."
+    ],
+    "grammar": {
+      "rule": "有些动词后常跟 to do，如 want / need / plan / hope to do；有些表达常跟 doing，如 enjoy / finish / keep doing。先记搭配，不背术语。",
+      "examples": [
+        "I want ___ English.",
+        "She enjoys ___.",
+        "Keep ___ every day."
+      ]
+    },
+    "quiz": [
+      [
+        "I want ___ English.",
+        [
+          "A. improve",
+          "B. to improve",
+          "C. improving"
+        ]
+      ],
+      [
+        "She enjoys ___.",
+        [
+          "A. read",
+          "B. to read",
+          "C. reading"
+        ]
+      ],
+      [
+        "Keep ___ every day.",
+        [
+          "A. trying",
+          "B. try",
+          "C. tried"
+        ]
+      ]
+    ],
+    "answers": "1 to improve；2 reading；3 trying。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "把括号里的词变成正确形式：",
+      "questions": [
+        "1. I plan ___ (review) the words.",
+        "2. He enjoys ___ (read).",
+        "3. Remember ___ (write) the answer.",
+        "4. Keep ___ (practice).",
+        "5. We hope ___ (finish) on time."
+      ],
+      "answers": "1 to review；2 reading；3 to write；4 practising；5 to finish。"
+    },
+    "parent": "让孩子口头补完：want to ___；enjoy ___ing；keep ___ing。只查搭配，不讲术语。"
+  },
+  "wed": {
+    "label": "周三",
+    "title": "周三：被动语态，先看 be + done",
+    "words": [
+      [
+        "made",
+        "被制作；制作过",
+        "made",
+        "It is made of paper."
+      ],
+      [
+        "built",
+        "被建造；建造过",
+        "built",
+        "The tower was built long ago."
+      ],
+      [
+        "used",
+        "被使用",
+        "used",
+        "English is used widely."
+      ],
+      [
+        "called",
+        "被称为",
+        "called",
+        "It is called a library."
+      ],
+      [
+        "written",
+        "被写",
+        "writ-ten",
+        "The story was written in English."
+      ],
+      [
+        "spoken",
+        "被说",
+        "spo-ken",
+        "English is spoken here."
+      ],
+      [
+        "found",
+        "被发现",
+        "found",
+        "The key was found."
+      ],
+      [
+        "sent",
+        "被发送",
+        "sent",
+        "The message was sent."
+      ],
+      [
+        "given",
+        "被给予",
+        "giv-en",
+        "Homework is given daily."
+      ],
+      [
+        "shown",
+        "被展示",
+        "shown",
+        "The answer is shown below."
+      ],
+      [
+        "produce",
+        "生产",
+        "pro-duce",
+        "They produce cars."
+      ],
+      [
+        "product",
+        "产品",
+        "prod-uct",
+        "This product is useful."
+      ],
+      [
+        "paper",
+        "纸",
+        "pa-per",
+        "It is made of paper."
+      ],
+      [
+        "wood",
+        "木头",
+        "wood",
+        "The desk is made of wood."
+      ],
+      [
+        "language",
+        "语言",
+        "lan-guage",
+        "English is a language."
+      ],
+      [
+        "world",
+        "世界",
+        "world",
+        "People around the world."
+      ],
+      [
+        "bridge",
+        "桥",
+        "bridge",
+        "The bridge is long."
+      ],
+      [
+        "tower",
+        "塔",
+        "tow-er",
+        "The tower is famous."
+      ],
+      [
+        "information",
+        "信息",
+        "in-for-ma-tion",
+        "The information is shown."
+      ],
+      [
+        "widely",
+        "广泛地",
+        "wide-ly",
+        "English is widely used."
+      ]
+    ],
+    "readingLines": [
+      "English is spoken in many countries.",
+      "This desk is made of wood.",
+      "The message was sent yesterday.",
+      "Canton Tower is visited by many people.",
+      "The answer is written on the board.",
+      "This book is used in our class.",
+      "The bridge was built many years ago.",
+      "Homework is checked every day.",
+      "Useful information is shown on the page.",
+      "The story was written for young readers."
+    ],
+    "grammar": {
+      "rule": "被动语态强调“东西被怎样了”。基础结构是 be + 过去分词，如 is used、was built。先学会认句意和选择。",
+      "examples": [
+        "English is ___ in many countries.",
+        "The bridge was ___ last year.",
+        "The message ___ sent yesterday."
+      ]
+    },
+    "quiz": [
+      [
+        "English is ___ in many countries.",
+        [
+          "A. speak",
+          "B. spoke",
+          "C. spoken"
+        ]
+      ],
+      [
+        "The bridge was ___ last year.",
+        [
+          "A. build",
+          "B. built",
+          "C. building"
+        ]
+      ],
+      [
+        "The message ___ sent yesterday.",
+        [
+          "A. was",
+          "B. were",
+          "C. is being"
+        ]
+      ]
+    ],
+    "answers": "1 spoken；2 built；3 was。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "判断T/F。",
+      "questions": [
+        "A new reading corner was built in Ran's school last month. English books are put on the left shelf. Storybooks are placed on the right. The corner is used by students after class. Ran found a short book there, and the book was written for beginners.",
+        "1. The corner was built last year. ___",
+        "2. English books are on the left. ___",
+        "3. Students use it after class. ___",
+        "4. Ran found a difficult science book. ___",
+        "5. The book was written for beginners. ___"
+      ],
+      "answers": "1 F；2 T；3 T；4 F；5 T。"
+    },
+    "parent": "问：is used 是“使用”还是“被使用”？孩子答“被使用”即可；再抽查 made、built、spoken、sent、shown。"
+  },
+  "thu": {
+    "label": "周四",
+    "title": "周四：阅读指代，搞清 it / they / this 指谁",
+    "words": [
+      [
+        "refer",
+        "指的是",
+        "re-fer",
+        "What does it refer to?"
+      ],
+      [
+        "mean",
+        "意思是",
+        "mean",
+        "What does this mean?"
+      ],
+      [
+        "mention",
+        "提到",
+        "men-tion",
+        "The writer mentions it."
+      ],
+      [
+        "sentence",
+        "句子",
+        "sen-tence",
+        "Read the sentence."
+      ],
+      [
+        "paragraph",
+        "段落",
+        "par-a-graph",
+        "Read the paragraph."
+      ],
+      [
+        "before",
+        "在前面；以前",
+        "be-fore",
+        "Look before the word."
+      ],
+      [
+        "after",
+        "在后面；以后",
+        "af-ter",
+        "Read the sentence after it."
+      ],
+      [
+        "near",
+        "附近的；接近",
+        "near",
+        "Find a near noun."
+      ],
+      [
+        "person",
+        "人",
+        "per-son",
+        "Who is the person?"
+      ],
+      [
+        "thing",
+        "事情；东西",
+        "thing",
+        "What is the thing?"
+      ],
+      [
+        "place",
+        "地点",
+        "place",
+        "Find the place."
+      ],
+      [
+        "idea",
+        "想法",
+        "i-de-a",
+        "This idea is useful."
+      ],
+      [
+        "reason",
+        "原因",
+        "rea-son",
+        "Find the reason."
+      ],
+      [
+        "result",
+        "结果",
+        "re-sult",
+        "Check the result."
+      ],
+      [
+        "writer",
+        "作者",
+        "writ-er",
+        "What does the writer think?"
+      ],
+      [
+        "reader",
+        "读者",
+        "read-er",
+        "The reader can understand."
+      ],
+      [
+        "keyword",
+        "关键词",
+        "key-word",
+        "Circle the keyword."
+      ],
+      [
+        "clue",
+        "线索",
+        "clue",
+        "Find a clue."
+      ],
+      [
+        "replace",
+        "替代",
+        "re-place",
+        "It replaces a noun."
+      ],
+      [
+        "check",
+        "检查",
+        "check",
+        "Check the meaning."
+      ]
+    ],
+    "readingLines": [
+      "Ran bought a dictionary. It is small but useful.",
+      "His parents checked the cards. They signed the page.",
+      "The reading task was hard. This made Ran slow down.",
+      "Circle the pronoun first.",
+      "Then look before it for a noun.",
+      "Choose the nearest sensible answer.",
+      "Put the noun back into the sentence.",
+      "Check whether the meaning is clear.",
+      "Do not choose only because two words look alike.",
+      "A clear clue is better than a guess."
+    ],
+    "grammar": {
+      "rule": "阅读里 it、they、this 常替代前文内容。做题时往前找最近、意思又对得上的名词，再代回原句检查。",
+      "examples": [
+        "Ran has a book. It is new. “It” refers to ___.",
+        "Amy and May study together. They help each other. “They” refers to ___.",
+        "The bus was late. This made me worried. “This” refers to ___."
+      ]
+    },
+    "quiz": [
+      [
+        "Ran has a book. It is new. “It” refers to ___.",
+        [
+          "A. Ran",
+          "B. book",
+          "C. new"
+        ]
+      ],
+      [
+        "Amy and May study together. They help each other. “They” refers to ___.",
+        [
+          "A. Amy and May",
+          "B. study",
+          "C. together"
+        ]
+      ],
+      [
+        "The bus was late. This made me worried. “This” refers to ___.",
+        [
+          "A. the bus being late",
+          "B. me",
+          "C. worried"
+        ]
+      ]
+    ],
+    "answers": "1 book；2 Amy and May；3 the bus being late。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "短阅读：Ran joined a reading club. It meets every Friday. The members read short stories and share ideas. They do not laugh at mistakes. This makes Ran feel safe, so he speaks more English now.",
+      "questions": [
+        "1. “It” refers to ______。",
+        "2. “They” refers to ______。",
+        "3. “This” refers to ______。",
+        "4. The club meets on ______。",
+        "5. Why does Ran speak more English now? ______。"
+      ],
+      "answers": "1 the reading club；2 the members；3 members do not laugh at mistakes；4 Friday；5 Because he feels safe。"
+    },
+    "parent": "让孩子指着原文说出 it、they、this 分别替代什么。能在原文圈出来即可。"
+  },
+  "fri": {
+    "label": "周五",
+    "title": "周五：六句作文，用 because 和完成时加一层",
+    "words": [
+      [
+        "topic",
+        "主题",
+        "top-ic",
+        "The topic is study."
+      ],
+      [
+        "opening",
+        "开头",
+        "o-pen-ing",
+        "Write an opening sentence."
+      ],
+      [
+        "ending",
+        "结尾",
+        "end-ing",
+        "Write a clear ending."
+      ],
+      [
+        "first",
+        "首先",
+        "first",
+        "First, read the task."
+      ],
+      [
+        "then",
+        "然后",
+        "then",
+        "Then, make a plan."
+      ],
+      [
+        "finally",
+        "最后",
+        "fi-nal-ly",
+        "Finally, check it."
+      ],
+      [
+        "because",
+        "因为",
+        "be-cause",
+        "I practise because it helps."
+      ],
+      [
+        "so",
+        "所以",
+        "so",
+        "I was tired, so I rested."
+      ],
+      [
+        "although",
+        "虽然",
+        "al-though",
+        "Although it was hard, I tried."
+      ],
+      [
+        "improve",
+        "提高",
+        "im-prove",
+        "I want to improve."
+      ],
+      [
+        "habit",
+        "习惯",
+        "hab-it",
+        "Build a good habit."
+      ],
+      [
+        "progress",
+        "进步",
+        "prog-ress",
+        "I have made progress."
+      ],
+      [
+        "mistake",
+        "错误",
+        "mis-take",
+        "Check each mistake."
+      ],
+      [
+        "complete",
+        "完整的；完成",
+        "com-plete",
+        "Write a complete sentence."
+      ],
+      [
+        "clear",
+        "清楚的",
+        "clear",
+        "Make the meaning clear."
+      ],
+      [
+        "simple",
+        "简单的",
+        "sim-ple",
+        "Use simple words."
+      ],
+      [
+        "useful",
+        "有用的",
+        "use-ful",
+        "This method is useful."
+      ],
+      [
+        "record",
+        "记录",
+        "re-cord",
+        "Keep a study record."
+      ],
+      [
+        "continue",
+        "继续",
+        "con-tin-ue",
+        "I will continue."
+      ],
+      [
+        "confident",
+        "有信心的",
+        "con-fi-dent",
+        "I feel more confident."
+      ]
+    ],
+    "readingLines": [
+      "English is important to me.",
+      "I study from 8:30 to 9:20 every evening.",
+      "First, I learn twenty words.",
+      "Then, I read aloud and record my voice.",
+      "I write down mistakes because I do not want to repeat them.",
+      "I have made some progress in five weeks.",
+      "My sentences are simple but complete.",
+      "I check the subject and the verb.",
+      "Finally, I read the whole paragraph again.",
+      "I will continue this habit next week."
+    ],
+    "grammar": {
+      "rule": "作文仍然先求句子完整。六句顺序：主题—时间—行动1—行动2—原因—结果/计划。至少用一个 because，并尝试一个 have / has done。",
+      "examples": [
+        "I practise every day ___ I want to improve.",
+        "I have ___ progress.",
+        "A complete sentence usually needs a subject and a ___."
+      ]
+    },
+    "quiz": [
+      [
+        "I practise every day ___ I want to improve.",
+        [
+          "A. because",
+          "B. but",
+          "C. or"
+        ]
+      ],
+      [
+        "I have ___ progress.",
+        [
+          "A. make",
+          "B. made",
+          "C. making"
+        ]
+      ],
+      [
+        "A complete sentence usually needs a subject and a ___.",
+        [
+          "A. colour",
+          "B. verb",
+          "C. number"
+        ]
+      ]
+    ],
+    "answers": "1 because；2 made；3 verb。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "按六句法写《My English Study》：",
+      "questions": [
+        "1. English is ______。",
+        "2. I study English ______。",
+        "3. First, I ______。",
+        "4. Then, I ______。",
+        "5. I ______ because ______。",
+        "6. I have ______, and I will ______。",
+        "检查：六句都有主语和动词；because 前后意思通；have 后用过去分词。"
+      ],
+      "answers": "参考：English is important to me. I study English every evening. First, I learn twenty words. Then, I read aloud. I write down mistakes because I want to improve. I have made progress, and I will continue next week."
+    },
+    "parent": "只检查是不是六句、每句有没有主语和动词、because 有没有写完整。不要求高级词。"
+  },
+  "sat": {
+    "label": "周六",
+    "title": "周六：第5周小测",
+    "words": [
+      [
+        "already",
+        "已经",
+        "already",
+        "Review already."
+      ],
+      [
+        "yet",
+        "还；已经",
+        "yet",
+        "Review yet."
+      ],
+      [
+        "ever",
+        "曾经",
+        "ever",
+        "Review ever."
+      ],
+      [
+        "never",
+        "从不",
+        "never",
+        "Review never."
+      ],
+      [
+        "seen",
+        "看过",
+        "seen",
+        "Review seen."
+      ],
+      [
+        "done",
+        "做完",
+        "done",
+        "Review done."
+      ],
+      [
+        "written",
+        "写过",
+        "written",
+        "Review written."
+      ],
+      [
+        "want",
+        "想要",
+        "want",
+        "Review want."
+      ],
+      [
+        "enjoy",
+        "喜欢",
+        "enjoy",
+        "Review enjoy."
+      ],
+      [
+        "keep",
+        "继续",
+        "keep",
+        "Review keep."
+      ],
+      [
+        "made",
+        "被制作",
+        "made",
+        "Review made."
+      ],
+      [
+        "built",
+        "被建造",
+        "built",
+        "Review built."
+      ],
+      [
+        "spoken",
+        "被说",
+        "spoken",
+        "Review spoken."
+      ],
+      [
+        "sent",
+        "被发送",
+        "sent",
+        "Review sent."
+      ],
+      [
+        "shown",
+        "被展示",
+        "shown",
+        "Review shown."
+      ],
+      [
+        "refer",
+        "指的是",
+        "refer",
+        "Review refer."
+      ],
+      [
+        "clue",
+        "线索",
+        "clue",
+        "Review clue."
+      ],
+      [
+        "because",
+        "因为",
+        "because",
+        "Review because."
+      ],
+      [
+        "progress",
+        "进步",
+        "progress",
+        "Review progress."
+      ],
+      [
+        "continue",
+        "继续",
+        "continue",
+        "Review continue."
+      ]
+    ],
+    "readingLines": [
+      "I have studied for five weeks.",
+      "English is spoken in many countries.",
+      "I enjoy reading.",
+      "Circle what “it” refers to.",
+      "I have made progress."
+    ],
+    "grammar": {
+      "rule": "先独立完成50分小测，再对答案。",
+      "examples": [
+        "has + done",
+        "enjoy doing",
+        "be + done"
+      ]
+    },
+    "quiz": [
+      [
+        "He ___ already finished.",
+        [
+          "A. have",
+          "B. has",
+          "C. is"
+        ]
+      ],
+      [
+        "English is ___ widely.",
+        [
+          "A. speak",
+          "B. spoken",
+          "C. speaking"
+        ]
+      ],
+      [
+        "I enjoy ___.",
+        [
+          "A. reading",
+          "B. read",
+          "C. to reading"
+        ]
+      ]
+    ],
+    "answers": "1 B；2 B；3 A。",
+    "readingTask": {
+      "type": "周测提醒",
+      "passage": "完整试题在第5周学习包中。完成后记录总分。",
+      "questions": [
+        "单词20分",
+        "语法15分",
+        "阅读15分"
+      ],
+      "answers": "低于30分：周日只补错题；30-39分：正常进入下周；40分以上：可加1篇短阅读。"
+    },
+    "parent": "记录分数，不讲题。"
+  },
+  "sun": {
+    "label": "周日",
+    "title": "周日：错词错题复盘",
+    "words": [
+      [
+        "already",
+        "已经",
+        "already",
+        "Review already."
+      ],
+      [
+        "yet",
+        "还；已经",
+        "yet",
+        "Review yet."
+      ],
+      [
+        "ever",
+        "曾经",
+        "ever",
+        "Review ever."
+      ],
+      [
+        "never",
+        "从不",
+        "never",
+        "Review never."
+      ],
+      [
+        "seen",
+        "看过",
+        "seen",
+        "Review seen."
+      ],
+      [
+        "done",
+        "做完",
+        "done",
+        "Review done."
+      ],
+      [
+        "written",
+        "写过",
+        "written",
+        "Review written."
+      ],
+      [
+        "want",
+        "想要",
+        "want",
+        "Review want."
+      ],
+      [
+        "enjoy",
+        "喜欢",
+        "enjoy",
+        "Review enjoy."
+      ],
+      [
+        "keep",
+        "继续",
+        "keep",
+        "Review keep."
+      ],
+      [
+        "made",
+        "被制作",
+        "made",
+        "Review made."
+      ],
+      [
+        "built",
+        "被建造",
+        "built",
+        "Review built."
+      ],
+      [
+        "spoken",
+        "被说",
+        "spoken",
+        "Review spoken."
+      ],
+      [
+        "sent",
+        "被发送",
+        "sent",
+        "Review sent."
+      ],
+      [
+        "shown",
+        "被展示",
+        "shown",
+        "Review shown."
+      ],
+      [
+        "refer",
+        "指的是",
+        "refer",
+        "Review refer."
+      ],
+      [
+        "clue",
+        "线索",
+        "clue",
+        "Review clue."
+      ],
+      [
+        "because",
+        "因为",
+        "because",
+        "Review because."
+      ],
+      [
+        "progress",
+        "进步",
+        "progress",
+        "Review progress."
+      ],
+      [
+        "continue",
+        "继续",
+        "continue",
+        "Review continue."
+      ]
+    ],
+    "readingLines": [
+      "I correct my real mistakes.",
+      "I do not repeat questions I already know.",
+      "I will keep going next week."
+    ],
+    "grammar": {
+      "rule": "只补真实错点：10个错词、5道错题、1次作文检查。",
+      "examples": [
+        "写原答案",
+        "写正确答案",
+        "写错因"
+      ]
+    },
+    "quiz": [
+      [
+        "have / has 后接什么？",
+        [
+          "A. 原形",
+          "B. 过去分词",
+          "C. 比较级"
+        ]
+      ],
+      [
+        "be + done 常表示什么？",
+        [
+          "A. 被动",
+          "B. 将来",
+          "C. 比较"
+        ]
+      ],
+      [
+        "it 指代题先往哪里找？",
+        [
+          "A. 往前",
+          "B. 往后",
+          "C. 随便猜"
+        ]
+      ]
+    ],
+    "answers": "1 B；2 A；3 A。",
+    "readingTask": {
+      "type": "周日复盘",
+      "passage": "从本周材料挑真实错题。",
+      "questions": [
+        "10个错词",
+        "5道错题",
+        "检查六句作文"
+      ],
+      "answers": "写出正确答案和错因即完成。"
+    },
+    "parent": "确认复盘表有5条，签名即可。"
+  }
+};
+
 const weeks = {
   week1: { label: "第1周", title: "第1周：先把基础词和小语法稳住", scoreMax: 100, tasks: week1Tasks, days: week1Data, test: ["抽查30个单词中文意思，30分。", "抽查10个单词拼写，20分。", "语法20题，20分。", "短阅读1篇5题，30分。"], quote: "第1周先别贪多。每天把单词、录音、错题做完，基础分就开始往回捡。" },
   week2: { label: "第2周", title: "第2周：接着练时态和短阅读", scoreMax: 50, tasks: week2Tasks, days: week2Data, test: ["单词中文10题，10分。", "单词拼写10题，10分。", "语法5题，15分。", "短阅读1篇5题，15分。"], quote: "第2周只求稳：每天把20个词、3道语法题、1个阅读任务和1条错题记录做完，就是在往60分靠近。" },
   week3: { label: "第3周", title: "第3周：继续练情态动词、比较级和阅读定位", scoreMax: 50, tasks: week2Tasks, days: week3Data, test: ["单词中文10题，10分。", "单词拼写10题，10分。", "语法5题，15分。", "短阅读1篇5题，15分。"], quote: "第3周还是只求稳：每天把20个词、3道语法题、1个阅读任务和1条错题记录做完，就已经在往60分靠近。" },
-  week4: { label: "第4周", title: "第4周：补过去进行时、将来表达、频率副词、连接词和五句作文", scoreMax: 50, tasks: week2Tasks, days: week4Data, test: ["单词中文10题，10分。", "单词拼写10题，10分。", "语法/方法5题，15分。", "短阅读1篇5题，15分。"], quote: "第4周开始碰作文，但只写5句。每天照着小任务走，重点还是完整、少错、能坚持。" }
+  week4: { label: "第4周", title: "第4周：补过去进行时、将来表达、频率副词、连接词和五句作文", scoreMax: 50, tasks: week2Tasks, days: week4Data, test: ["单词中文10题，10分。", "单词拼写10题，10分。", "语法/方法5题，15分。", "短阅读1篇5题，15分。"], quote: "第4周开始碰作文，但只写5句。每天照着小任务走，重点还是完整、少错、能坚持。" },
+  week5: { label: "第5周", title: "第5周：完成时、常见搭配、被动语态、阅读指代和六句作文", scoreMax: 50, tasks: week2Tasks, days: week5Data, test: ["单词中文10题，10分。", "单词拼写5题，10分。", "语法/方法5题，15分。", "短阅读1篇5题，15分。"], quote: "第5周只把难度抬半格：先认结构、会做基础题、能写六个完整句子。" }
 };
 
 
 
 const stateKey = "rango-english-continuous-v1";
 const syncAppName = "rango-english-continuous-progress";
-const legacyKeys = { week1: "rango-english-week1", week2: "rango-english-week2", week3: "rango-english-week3", week4: "rango-english-week4" };
-const compatibleApps = [syncAppName, "rango-english-week1-progress", "rango-english-week2-progress", "rango-english-week3-progress", "rango-english-week4-progress", "rango-english-github-pages-progress"];
+const legacyKeys = { week1: "rango-english-week1", week2: "rango-english-week2", week3: "rango-english-week3", week4: "rango-english-week4", week5: "rango-english-week5" };
+const compatibleApps = [syncAppName, "rango-english-week1-progress", "rango-english-week2-progress", "rango-english-week3-progress", "rango-english-week4-progress", "rango-english-week5-progress", "rango-english-github-pages-progress"];
 let state = loadState();
 let currentWeek = state.currentWeek || "week1";
 let currentDay = state.currentDay || weekState(currentWeek).currentDay || "mon";
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;"); }
-function blank() { return { currentWeek: "week1", currentDay: "mon", weeks: { week1: { currentDay: "mon", weeklyScore: "", days: {} }, week2: { currentDay: "mon", weeklyScore: "", days: {} }, week3: { currentDay: "mon", weeklyScore: "", days: {} }, week4: { currentDay: "mon", weeklyScore: "", days: {} } } }; }
+function blank() { return { currentWeek: "week1", currentDay: "mon", weeks: { week1: { currentDay: "mon", weeklyScore: "", days: {} }, week2: { currentDay: "mon", weeklyScore: "", days: {} }, week3: { currentDay: "mon", weeklyScore: "", days: {} }, week4: { currentDay: "mon", weeklyScore: "", days: {} }, week5: { currentDay: "mon", weeklyScore: "", days: {} } } }; }
 function readJson(key) { try { const raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : null; } catch (e) { return null; } }
 function normWeek(input) { const src = input && typeof input === "object" ? input : {}; return { ...src, currentDay: src.currentDay || src.cur || "mon", weeklyScore: src.weeklyScore || src.score || "", days: src.days && typeof src.days === "object" ? src.days : {} }; }
 function hasData(input) { const w = normWeek(input); return Boolean(w.weeklyScore || Object.keys(w.days || {}).length); }
@@ -3669,6 +4958,7 @@ function loadState() {
   const old2 = readJson(legacyKeys.week2);
   const old3 = readJson(legacyKeys.week3);
   const old4 = readJson(legacyKeys.week4);
+  const old5 = readJson(legacyKeys.week5);
   if (!hasData(next.weeks.week1)) {
     if (hasData(old1)) next.weeks.week1 = normWeek(old1);
     else if (old2 && old2.previousWeeks && hasData(old2.previousWeeks.week1)) next.weeks.week1 = normWeek(old2.previousWeeks.week1);
@@ -3685,6 +4975,7 @@ function loadState() {
     else if (old4 && old4.previousWeeks && hasData(old4.previousWeeks.week3)) next.weeks.week3 = normWeek(old4.previousWeeks.week3);
   }
   if (!hasData(next.weeks.week4) && hasData(old4)) next.weeks.week4 = normWeek(old4);
+  if (!hasData(next.weeks.week5) && hasData(old5)) next.weeks.week5 = normWeek(old5);
   return next;
 }
 function weekState(key) { state.weeks ||= {}; state.weeks[key] = normWeek(state.weeks[key]); return state.weeks[key]; }
@@ -3698,7 +4989,7 @@ function summary(key) { const d = weekState(key).days || {}; const keys = Object
 function setSyncStatus(text) { document.querySelector("#syncStatus").textContent = text; }
 function encodeProgressCode(payload) { const bytes = new TextEncoder().encode(JSON.stringify(payload)); let binary = ""; bytes.forEach(b => binary += String.fromCharCode(b)); return btoa(binary); }
 function decodeProgressCode(code) { const clean = code.trim(); return JSON.parse(clean.startsWith("{") ? clean : new TextDecoder().decode(Uint8Array.from(atob(clean), c => c.charCodeAt(0)))); }
-function payload() { save(); return { app: syncAppName, version: 4, exportedAt: new Date().toISOString(), state }; }
+function payload() { save(); return { app: syncAppName, version: 5, exportedAt: new Date().toISOString(), state }; }
 function importPayload(data) {
   const imported = data && (data.state || data.store);
   if (!data || !compatibleApps.includes(data.app) || !imported || typeof imported !== "object") throw new Error("bad data");
@@ -3719,6 +5010,9 @@ function importPayload(data) {
     if (imported.previousWeeks && imported.previousWeeks.week2) next.weeks.week2 = normWeek(imported.previousWeeks.week2);
     if (imported.previousWeeks && imported.previousWeeks.week3) next.weeks.week3 = normWeek(imported.previousWeeks.week3);
     next.currentWeek = "week4";
+  } else if (data.app === "rango-english-week5-progress") {
+    next.weeks.week5 = normWeek(imported);
+    next.currentWeek = "week5";
   } else {
     next.weeks.week1 = normWeek(imported);
     next.currentWeek = "week1";
@@ -3730,20 +5024,20 @@ function applyPayload(data) { const next = importPayload(data); if (!confirm("�
 function downloadTextFile(name, text) { const blob = new Blob([text], { type: "application/json;charset=utf-8" }); const url = URL.createObjectURL(blob); const link = document.createElement("a"); link.href = url; link.download = name; document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url); }
 async function copyText(text) { if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); return true; } const box = document.querySelector("#progressCode"); box.focus(); box.select(); return document.execCommand("copy"); }
 
-function renderWeekSelect() { const el = document.querySelector("#weekSelect"); el.innerHTML = Object.entries(weeks).map(([k, w]) => "<option value=\"" + k + "\">" + w.label + "</option>").join(""); el.value = currentWeek; document.querySelector("#headerWeekLabel").textContent = "八下英语 · " + plan().label + " / 第1周-第4周连续周计划"; document.querySelector("#weekTitle").textContent = plan().title; document.querySelector("#weekHint").textContent = plan().label + "内容。家长切周后，再选周几就行。"; document.querySelector("#currentWeekText").textContent = plan().label; }
+function renderWeekSelect() { const el = document.querySelector("#weekSelect"); el.innerHTML = Object.entries(weeks).map(([k, w]) => "<option value=\"" + k + "\">" + w.label + "</option>").join(""); el.value = currentWeek; document.querySelector("#headerWeekLabel").textContent = "八下英语 · " + plan().label + " / 第1周-第5周连续周计划"; document.querySelector("#weekTitle").textContent = plan().title; document.querySelector("#weekHint").textContent = plan().label + "内容。家长切周后，再选周几就行。"; document.querySelector("#currentWeekText").textContent = plan().label; }
 function renderDaySelect() { const el = document.querySelector("#daySelect"); if (!days()[currentDay]) currentDay = "mon"; el.innerHTML = Object.entries(days()).map(([k, d]) => "<option value=\"" + k + "\">" + d.label + "</option>").join(""); el.value = currentDay; }
 function renderTasks() { const data = days()[currentDay]; const ds = dayState(); document.querySelector("#dayTitle").textContent = data.title; document.querySelector("#taskList").innerHTML = plan().tasks.map((t, i) => "<label class=\"task\"><input type=\"checkbox\" data-task=\"" + i + "\" " + (ds.tasks[i] ? "checked" : "") + "><span><strong>" + esc(t[0]) + "</strong><p>" + esc(t[1]) + "</p></span></label>").join(""); document.querySelector("#mistakeNote").value = ds.mistake || ""; }
 function renderWords() { const data = days()[currentDay]; const ds = dayState(); const list = data.words.length ? data.words : allWords(); document.querySelector("#wordPanelTitle").textContent = data.words.length ? "今日20个单词" : plan().label + "复习词"; document.querySelector("#wordCards").innerHTML = list.map((w, i) => { const key = currentWeek + "-" + currentDay + "-" + w[0] + "-" + i; const oldKey = currentDay + "-" + w[0] + "-" + i; const mark = ds.words[key] || ds.words[oldKey] || ""; return "<article class=\"word-card\"><div class=\"word-top\"><strong>" + esc(w[0]) + "</strong><span class=\"tip\">" + esc(w[2]) + "</span></div><div>" + esc(w[1]) + "</div><p class=\"example\">" + esc(w[3]) + "</p><div class=\"word-actions\"><button data-word=\"" + esc(key) + "\" data-mark=\"ok\" class=\"" + (mark === "ok" ? "done" : "") + "\">会了</button><button data-word=\"" + esc(key) + "\" data-mark=\"hard\" class=\"" + (mark === "hard" ? "hard" : "") + "\">不会</button></div></article>"; }).join(""); }
 function renderPractice() { const data = days()[currentDay]; const ds = dayState(); const lines = document.querySelector("#readingLinesPanel"); const taskPanel = document.querySelector("#readingTaskPanel"); lines.hidden = !data.readingLines; document.querySelector("#readingLinesBox").innerHTML = data.readingLines ? "<ol class=\"reading-lines\">" + data.readingLines.map(x => "<li>" + esc(x) + "</li>").join("") + "</ol>" : ""; document.querySelector("#grammarBox").innerHTML = "<div class=\"grammar-rule\">" + esc(data.grammar.rule) + "</div><ul class=\"simple-list\">" + data.grammar.examples.map(x => "<li>" + esc(x) + "</li>").join("") + "</ul>"; document.querySelector("#quizTitle").textContent = data.quiz.length <= 3 ? "语法3题" : "今日小练习"; document.querySelector("#quizBox").innerHTML = data.quiz.map((q, i) => "<div class=\"quiz-item\"><strong>" + (i + 1) + ". " + esc(q[0]) + "</strong><div class=\"quiz-options\">" + q[1].map(o => "<button class=\"quiz-option " + (ds.answers[i] === o ? "selected" : "") + "\" data-question=\"" + i + "\" data-answer=\"" + esc(o) + "\">" + esc(o) + "</button>").join("") + "</div></div>").join(""); if (data.readingTask) { const r = data.readingTask; taskPanel.hidden = false; document.querySelector("#readingTaskBox").innerHTML = "<p class=\"tag\">" + esc(r.type) + "</p><p class=\"passage\">" + esc(r.passage) + "</p><ol class=\"simple-list\">" + r.questions.map(x => "<li>" + esc(x).replace(/^\d+\.\s*/, "") + "</li>").join("") + "</ol><details class=\"answer-box\"><summary>查看答案</summary><p>" + esc(r.answers) + "</p></details>"; } else { taskPanel.hidden = true; document.querySelector("#readingTaskBox").innerHTML = ""; } document.querySelector("#quizResult").textContent = ds.quizResult || ""; }
 function renderParent() { const ds = dayState(); const ws = weekState(currentWeek); const done = Object.values(ds.tasks || {}).filter(Boolean).length; const okWords = Object.values(ds.words || {}).filter(v => v === "ok").length; const hardWords = Object.values(ds.words || {}).filter(v => v === "hard").length; const checks = [[plan().label + "今日任务", done + "/5 项完成", done >= 5], ["单词", "已标记会了 " + okWords + " 个，不会 " + hardWords + " 个", okWords >= 15], ["朗读录音", ds.record ? "孩子已点完成录音" : "还没点完成录音", ds.record], ["错题本", ds.mistake ? "已保存错题记录" : "今天还没写错题", Boolean(ds.mistake)], ["周测分数", ws.weeklyScore ? ws.weeklyScore + " 分" : "周六再填", Boolean(ws.weeklyScore)]]; document.querySelector("#parentChecklist").innerHTML = checks.map(x => "<div class=\"parent-item " + (x[2] ? "ok" : "") + "\"><strong>" + x[0] + "</strong><br>" + x[1] + "</div>").join(""); document.querySelector("#weeklyTestList").innerHTML = plan().test.map(x => "<li>" + esc(x) + "</li>").join(""); document.querySelector("#weeklyScoreLabel").textContent = plan().label + "小测分数"; document.querySelector("#weeklyScore").max = plan().scoreMax; document.querySelector("#weeklyScore").placeholder = plan().scoreMax === 50 ? "例如 36" : "例如 62"; document.querySelector("#weeklyScore").value = ws.weeklyScore || ""; document.querySelector("#kidQuote").textContent = plan().quote; renderContinuitySummary(); }
 function renderContinuitySummary() {
-  const weekKeys = ["week1", "week2", "week3", "week4"];
+  const weekKeys = ["week1", "week2", "week3", "week4", "week5"];
   const totals = weekKeys.map(summary);
   const totalComplete = totals.reduce((n, item) => n + item.complete, 0);
   const totalActive = totals.reduce((n, item) => n + item.active, 0);
   const totalMistakes = totals.reduce((n, item) => n + item.mistakes, 0);
   const scoreText = totals.map((item, index) => "第" + (index + 1) + "周：" + (item.score ? item.score + " 分" : "未填")).join("；");
-  document.querySelector("#continuitySummary").innerHTML = "<div class=\"continuity-card wide\"><strong>连续四周记录放在一起</strong><span>切到第1周、第2周、第3周或第4周，打卡、错题、4次周测分数都会存在同一个学习记录里。</span></div><div class=\"continuity-card\"><strong>" + totalComplete + " 天</strong><span>四周累计完成打卡</span></div><div class=\"continuity-card\"><strong>" + totalActive + " 天</strong><span>四周有学习记录</span></div><div class=\"continuity-card\"><strong>" + totalMistakes + " 条</strong><span>四周累计错题</span></div><div class=\"continuity-card wide\"><strong>四周周测分数</strong><span>" + scoreText + "</span></div>";
+  document.querySelector("#continuitySummary").innerHTML = "<div class=\"continuity-card wide\"><strong>连续五周记录放在一起</strong><span>切到第1周、第2周、第3周、第4周或第5周，打卡、错题、5次周测分数都会存在同一个学习记录里。</span></div><div class=\"continuity-card\"><strong>" + totalComplete + " 天</strong><span>五周累计完成打卡</span></div><div class=\"continuity-card\"><strong>" + totalActive + " 天</strong><span>五周有学习记录</span></div><div class=\"continuity-card\"><strong>" + totalMistakes + " 条</strong><span>五周累计错题</span></div><div class=\"continuity-card wide\"><strong>五周周测分数</strong><span>" + scoreText + "</span></div>";
 }
 function updateDoneCount() { const ds = dayState(); document.querySelector("#doneCount").textContent = Object.values(ds.tasks || {}).filter(Boolean).length + (ds.record ? 1 : 0) + (ds.mistake ? 1 : 0); }
 function renderAll() { renderWeekSelect(); renderDaySelect(); renderTasks(); renderWords(); renderPractice(); renderParent(); updateDoneCount(); }
@@ -3758,12 +5052,12 @@ document.querySelector("#checkQuiz").addEventListener("click", () => { const dat
 document.querySelector("#recordDone").addEventListener("click", () => { dayState().record = true; save(); renderParent(); updateDoneCount(); alert("已记录。现在去错题本写1-3道错题。"); });
 document.querySelector("#saveMistake").addEventListener("click", () => { dayState().mistake = document.querySelector("#mistakeNote").value.trim(); save(); renderParent(); updateDoneCount(); alert("错题已保存。"); });
 document.querySelector("#saveScore").addEventListener("click", () => { weekState(currentWeek).weeklyScore = document.querySelector("#weeklyScore").value.trim(); save(); renderParent(); });
-document.querySelector("#downloadBackup").addEventListener("click", () => { const date = new Date().toISOString().slice(0, 10); downloadTextFile("然哥英语连续四周学习记录-" + date + ".json", JSON.stringify(payload(), null, 2)); setSyncStatus("连续四周学习记录已下载。换手机时，把这个文件发到新手机，再点“一键导入学习记录”。"); });
+document.querySelector("#downloadBackup").addEventListener("click", () => { const date = new Date().toISOString().slice(0, 10); downloadTextFile("然哥英语连续五周学习记录-" + date + ".json", JSON.stringify(payload(), null, 2)); setSyncStatus("连续五周学习记录已下载。换手机时，把这个文件发到新手机，再点“一键导入学习记录”。"); });
 document.querySelector("#chooseBackup").addEventListener("click", () => document.querySelector("#backupFile").click());
 document.querySelector("#backupFile").addEventListener("change", async e => { const file = e.target.files && e.target.files[0]; e.target.value = ""; if (!file) return; try { applyPayload(JSON.parse(await file.text())); } catch (err) { setSyncStatus("这个文件不能导入。新版、旧第1周、旧第2周连续版、旧第3周独立版、旧第4周的学习记录文件都可以；请确认选的是正确备份文件。"); } });
-document.querySelector("#exportProgress").addEventListener("click", async () => { const code = encodeProgressCode(payload()); document.querySelector("#progressCode").value = code; try { const copied = await copyText(code); setSyncStatus(copied ? "连续四周进度码已生成并复制。发给家长后，在家长手机导入即可。" : "进度码已生成。请手动复制后发给家长。"); } catch (e) { setSyncStatus("进度码已生成。请手动复制后发给家长。"); } });
+document.querySelector("#exportProgress").addEventListener("click", async () => { const code = encodeProgressCode(payload()); document.querySelector("#progressCode").value = code; try { const copied = await copyText(code); setSyncStatus(copied ? "连续五周进度码已生成并复制。发给家长后，在家长手机导入即可。" : "进度码已生成。请手动复制后发给家长。"); } catch (e) { setSyncStatus("进度码已生成。请手动复制后发给家长。"); } });
 document.querySelector("#importProgress").addEventListener("click", () => { const code = document.querySelector("#progressCode").value.trim(); if (!code) return setSyncStatus("请先粘贴孩子手机发来的进度码。"); try { applyPayload(decodeProgressCode(code)); } catch (e) { setSyncStatus("进度码不能识别。请确认整段复制，没有少字或多空格。旧第1周/第2周连续版/第3周独立版/第4周进度码也可以导入。"); } });
-document.querySelector("#resetAll").addEventListener("click", () => { if (!confirm("确定清空这台手机/电脑上的连续四周学习记录吗？旧版记录不会一起删除。")) return; localStorage.removeItem(stateKey); state = blank(); currentWeek = "week1"; currentDay = "mon"; renderAll(); });
+document.querySelector("#resetAll").addEventListener("click", () => { if (!confirm("确定清空这台手机/电脑上的连续五周学习记录吗？旧版记录不会一起删除。")) return; localStorage.removeItem(stateKey); state = blank(); currentWeek = "week1"; currentDay = "mon"; renderAll(); });
 save();
 renderAll();
 

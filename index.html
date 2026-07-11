@@ -248,8 +248,8 @@ footer { padding: 12px 18px 24px; text-align: center; }
 
     <section id="parent" class="view">
       <div class="panel">
-        <h2>第1周 + 第2周 + 第3周 + 第4周连续进度</h2>
-        <p class="plain">家长只看这一块，就知道五周有没有接上。上面切到第1周、第2周、第3周、第4周或第5周，可以分别查看每天细节。</p>
+        <h2>第1周 + 第2周 + 第3周 + 第4周 + 第5周 + 第6周连续进度</h2>
+        <p class="plain">家长只看这一块，就知道六周有没有接上。上面切到第1周、第2周、第3周、第4周、第5周、第6周或第6周，可以分别查看每天细节。</p>
         <div id="continuitySummary" class="continuity-grid"></div>
       </div>
 
@@ -269,7 +269,7 @@ footer { padding: 12px 18px 24px; text-align: center; }
 
       <div class="panel">
         <h2>学习进度同步</h2>
-        <p class="plain">换手机、换浏览器前，先下载一份连续五周学习记录。新版会把第1周、第2周、第3周、第4周、第5周放在一个文件里。旧第1周、旧第2周连续版、旧第3周独立版、旧第4周单独内容备份也可以导入。</p>
+        <p class="plain">换手机、换浏览器前，先下载一份连续六周学习记录。新版会把第1周、第2周、第3周、第4周、第5周、第6周放在一个文件里。旧第1周、旧第2周连续版、旧第3周独立版、旧第4周、第5周单独内容备份也可以导入。</p>
         <button class="primary" id="downloadBackup">一键下载学习记录</button>
         <button class="secondary" id="chooseBackup">一键导入学习记录</button>
         <input id="backupFile" type="file" accept=".json,application/json" hidden>
@@ -4928,26 +4928,1276 @@ const week5Data = {
   }
 };
 
+const week6Data = {
+  "mon": {
+    "label": "周一",
+    "title": "周一：八下 Unit 1 基础词 + 主语和动词",
+    "words": [
+      [
+        "elderly",
+        "上了年纪的",
+        "elderly",
+        "I can use elderly."
+      ],
+      [
+        "offer",
+        "主动提出",
+        "offer",
+        "I can use offer."
+      ],
+      [
+        "serious",
+        "严重的",
+        "serious",
+        "I can use serious."
+      ],
+      [
+        "disease",
+        "疾病",
+        "disease",
+        "I can use disease."
+      ],
+      [
+        "cancer",
+        "癌症",
+        "cancer",
+        "I can use cancer."
+      ],
+      [
+        "spirits",
+        "情绪；心境",
+        "spirits",
+        "I can use spirits."
+      ],
+      [
+        "pain",
+        "痛苦",
+        "pain",
+        "I can use pain."
+      ],
+      [
+        "belong",
+        "适应；合得来",
+        "belong",
+        "I can use belong."
+      ],
+      [
+        "spare",
+        "空闲的；空余的",
+        "spare",
+        "I can use spare."
+      ],
+      [
+        "volunteer",
+        "自愿做",
+        "volunteer",
+        "I can use volunteer."
+      ],
+      [
+        "joy",
+        "高兴；愉快",
+        "joy",
+        "I can use joy."
+      ],
+      [
+        "lose",
+        "失去",
+        "lose",
+        "I can use lose."
+      ],
+      [
+        "raise",
+        "筹募",
+        "raise",
+        "I can use raise."
+      ],
+      [
+        "permission",
+        "准许；许可",
+        "permission",
+        "I can use permission."
+      ],
+      [
+        "arrange",
+        "排列；布置",
+        "arrange",
+        "I can use arrange."
+      ],
+      [
+        "donate",
+        "捐赠",
+        "donate",
+        "I can use donate."
+      ],
+      [
+        "pleasant",
+        "令人愉快的",
+        "pleasant",
+        "I can use pleasant."
+      ],
+      [
+        "look after",
+        "照顾",
+        "look after",
+        "I can use look after."
+      ],
+      [
+        "suffer from",
+        "遭受；患病",
+        "suffer from",
+        "I can use suffer from."
+      ],
+      [
+        "cheer somebody up",
+        "使某人高兴起来",
+        "cheer somebody up",
+        "I can use cheer somebody up."
+      ]
+    ],
+    "readingLines": [
+      "Volunteers look after elderly people.",
+      "The boy suffers from a serious disease.",
+      "We want to cheer him up.",
+      "They raise money for people in need.",
+      "I can donate my spare books.",
+      "The work brings us joy."
+    ],
+    "grammar": {
+      "rule": "每个完整句至少要有‘谁/什么 + 做什么/是什么’。先圈主语，再划动词。",
+      "examples": [
+        "Volunteers look after elderly people.",
+        "The boy suffers from a serious disease.",
+        "We want to cheer him up."
+      ]
+    },
+    "quiz": [
+      [
+        "Volunteers ___ elderly people.",
+        [
+          "A. looks after",
+          "A. look after",
+          "A. looking after"
+        ]
+      ],
+      [
+        "The boy ___ from a disease.",
+        [
+          "A. suffer",
+          "A. suffers",
+          "A. suffering"
+        ]
+      ],
+      [
+        "We want ___ him up.",
+        [
+          "A. cheer",
+          "A. to cheer",
+          "A. cheering"
+        ]
+      ]
+    ],
+    "answers": "1 B；2 B；3 B。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "在六个句子中圈出主语、划出动词，再仿写两句：I can ... / We want to ...。",
+      "questions": [
+        "完成后检查主语、动词和拼写。"
+      ],
+      "answers": "按当天学习包要求自查。"
+    },
+    "parent": "只检查五项是否完成，随机抽5词，不讲题。"
+  },
+  "tue": {
+    "label": "周二",
+    "title": "周二：八下 Unit 2 身体语言词 + 一般现在时",
+    "words": [
+      [
+        "shake",
+        "摇动；抖动",
+        "shake",
+        "I can use shake."
+      ],
+      [
+        "clap",
+        "鼓掌；拍手",
+        "clap",
+        "I can use clap."
+      ],
+      [
+        "madam",
+        "夫人；女士",
+        "madam",
+        "I can use madam."
+      ],
+      [
+        "boss",
+        "老板",
+        "boss",
+        "I can use boss."
+      ],
+      [
+        "expression",
+        "表情；神色",
+        "expression",
+        "I can use expression."
+      ],
+      [
+        "impression",
+        "印象",
+        "impression",
+        "I can use impression."
+      ],
+      [
+        "hold",
+        "使保持",
+        "hold",
+        "I can use hold."
+      ],
+      [
+        "observe",
+        "注意到；观察到",
+        "observe",
+        "I can use observe."
+      ],
+      [
+        "remind",
+        "提醒；使想起",
+        "remind",
+        "I can use remind."
+      ],
+      [
+        "nod",
+        "点头",
+        "nod",
+        "I can use nod."
+      ],
+      [
+        "meaning",
+        "意义；意思",
+        "meaning",
+        "I can use meaning."
+      ],
+      [
+        "immediately",
+        "立即；马上",
+        "immediately",
+        "I can use immediately."
+      ],
+      [
+        "shy",
+        "羞怯的",
+        "shy",
+        "I can use shy."
+      ],
+      [
+        "case",
+        "具体情况；事例",
+        "case",
+        "I can use case."
+      ],
+      [
+        "direct",
+        "直接的",
+        "direct",
+        "I can use direct."
+      ],
+      [
+        "truly",
+        "真诚地",
+        "truly",
+        "I can use truly."
+      ],
+      [
+        "behaviour",
+        "行为；举止",
+        "behaviour",
+        "I can use behaviour."
+      ],
+      [
+        "eye contact",
+        "目光接触",
+        "eye contact",
+        "I can use eye contact."
+      ],
+      [
+        "pay attention",
+        "注意",
+        "pay attention",
+        "I can use pay attention."
+      ],
+      [
+        "make a good impression on",
+        "给……留下好印象",
+        "make a good impression on",
+        "I can use make a good impression on."
+      ]
+    ],
+    "readingLines": [
+      "She smiles and makes eye contact.",
+      "He nods when he agrees.",
+      "Good behaviour makes a good impression.",
+      "I pay attention to the speaker.",
+      "The teacher reminds us to sit up.",
+      "A shy student may speak quietly."
+    ],
+    "grammar": {
+      "rule": "一般现在时说习惯和事实。主语是 he/she/单个人时，动词常加 -s。",
+      "examples": [
+        "She smiles and makes eye contact.",
+        "He nods when he agrees.",
+        "Good behaviour makes a good impression."
+      ]
+    },
+    "quiz": [
+      [
+        "He ___ when he agrees.",
+        [
+          "A. nod",
+          "A. nods",
+          "A. nodded"
+        ]
+      ],
+      [
+        "She ___ us to sit up.",
+        [
+          "A. remind",
+          "A. reminds",
+          "A. reminding"
+        ]
+      ],
+      [
+        "I ___ attention to the speaker.",
+        [
+          "A. pay",
+          "A. pays",
+          "A. paid"
+        ]
+      ]
+    ],
+    "answers": "1 B；2 B；3 A。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "从六句中找出3个第三人称单数动词，并把其中两句改成主语 I。",
+      "questions": [
+        "完成后检查主语、动词和拼写。"
+      ],
+      "answers": "按当天学习包要求自查。"
+    },
+    "parent": "只检查五项是否完成，随机抽5词，不讲题。"
+  },
+  "wed": {
+    "label": "周三",
+    "title": "周三：八下 Unit 3 文化与安全词 + 一般过去时",
+    "words": [
+      [
+        "performance",
+        "表演；演出",
+        "performance",
+        "I can use performance."
+      ],
+      [
+        "combine",
+        "组合；联合",
+        "combine",
+        "I can use combine."
+      ],
+      [
+        "theme",
+        "主题",
+        "theme",
+        "I can use theme."
+      ],
+      [
+        "advanced",
+        "先进的",
+        "advanced",
+        "I can use advanced."
+      ],
+      [
+        "artificial intelligence",
+        "人工智能",
+        "artificial intelligence",
+        "I can use artificial intelligence."
+      ],
+      [
+        "hero",
+        "男主人公；男主角",
+        "hero",
+        "I can use hero."
+      ],
+      [
+        "classic",
+        "经典的",
+        "classic",
+        "I can use classic."
+      ],
+      [
+        "speech",
+        "讲话",
+        "speech",
+        "I can use speech."
+      ],
+      [
+        "text",
+        "正文；文本",
+        "text",
+        "I can use text."
+      ],
+      [
+        "warning",
+        "警告；警示",
+        "warning",
+        "I can use warning."
+      ],
+      [
+        "mind",
+        "当心；注意",
+        "mind",
+        "I can use mind."
+      ],
+      [
+        "gap",
+        "缺口；裂口",
+        "gap",
+        "I can use gap."
+      ],
+      [
+        "crash",
+        "碰撞声；破裂声",
+        "crash",
+        "I can use crash."
+      ],
+      [
+        "wave",
+        "海浪；波浪",
+        "wave",
+        "I can use wave."
+      ],
+      [
+        "risk",
+        "危险；风险",
+        "risk",
+        "I can use risk."
+      ],
+      [
+        "advantage",
+        "优点",
+        "advantage",
+        "I can use advantage."
+      ],
+      [
+        "breath",
+        "呼吸的空气",
+        "breath",
+        "I can use breath."
+      ],
+      [
+        "come to life",
+        "显得逼真",
+        "come to life",
+        "I can use come to life."
+      ],
+      [
+        "watch out",
+        "小心；留神",
+        "watch out",
+        "I can use watch out."
+      ],
+      [
+        "with the help of",
+        "在……的帮助下",
+        "with the help of",
+        "I can use with the help of."
+      ]
+    ],
+    "readingLines": [
+      "We watched a performance yesterday.",
+      "The actors combined music and stories.",
+      "The hero gave a short speech.",
+      "A warning saved the boy.",
+      "We learned about folk art last week.",
+      "The puppet came to life on the screen."
+    ],
+    "grammar": {
+      "rule": "一般过去时讲已经发生的事。规则动词加 -ed；看到 yesterday/last week 要先想到过去时。",
+      "examples": [
+        "We watched a performance yesterday.",
+        "The actors combined music and stories.",
+        "The hero gave a short speech."
+      ]
+    },
+    "quiz": [
+      [
+        "We ___ a show yesterday.",
+        [
+          "A. watch",
+          "A. watched",
+          "A. watches"
+        ]
+      ],
+      [
+        "The hero ___ a speech.",
+        [
+          "A. give",
+          "A. gave",
+          "A. gives"
+        ]
+      ],
+      [
+        "We ___ about folk art last week.",
+        [
+          "A. learned",
+          "A. learn",
+          "A. learning"
+        ]
+      ]
+    ],
+    "answers": "1 B；2 B；3 A。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "圈出时间词 yesterday/last week，抄写3个过去式，并用 watched 写一句话。",
+      "questions": [
+        "完成后检查主语、动词和拼写。"
+      ],
+      "answers": "按当天学习包要求自查。"
+    },
+    "parent": "只检查五项是否完成，随机抽5词，不讲题。"
+  },
+  "thu": {
+    "label": "周四",
+    "title": "周四：八下 Unit 4-5 高频词 + 阅读定位",
+    "words": [
+      [
+        "master",
+        "著名画家；大师",
+        "master",
+        "I can use master."
+      ],
+      [
+        "masterpiece",
+        "代表作；杰作",
+        "masterpiece",
+        "I can use masterpiece."
+      ],
+      [
+        "alone",
+        "独自",
+        "alone",
+        "I can use alone."
+      ],
+      [
+        "copy",
+        "仿造；复制品",
+        "copy",
+        "I can use copy."
+      ],
+      [
+        "damage",
+        "损坏；毁坏",
+        "damage",
+        "I can use damage."
+      ],
+      [
+        "separate",
+        "不同的；不相关的",
+        "separate",
+        "I can use separate."
+      ],
+      [
+        "exhibition",
+        "展览；展出",
+        "exhibition",
+        "I can use exhibition."
+      ],
+      [
+        "lifestyle",
+        "生活方式",
+        "lifestyle",
+        "I can use lifestyle."
+      ],
+      [
+        "detail",
+        "细部；局部",
+        "detail",
+        "I can use detail."
+      ],
+      [
+        "require",
+        "需要",
+        "require",
+        "I can use require."
+      ],
+      [
+        "priceless",
+        "无价的",
+        "priceless",
+        "I can use priceless."
+      ],
+      [
+        "recognize",
+        "认出；辨别出",
+        "recognize",
+        "I can use recognize."
+      ],
+      [
+        "mirror",
+        "镜子",
+        "mirror",
+        "I can use mirror."
+      ],
+      [
+        "force",
+        "强迫；迫使",
+        "force",
+        "I can use force."
+      ],
+      [
+        "direction",
+        "方向；方位",
+        "direction",
+        "I can use direction."
+      ],
+      [
+        "progress",
+        "前进；行进",
+        "progress",
+        "I can use progress."
+      ],
+      [
+        "value",
+        "重视；珍视",
+        "value",
+        "I can use value."
+      ],
+      [
+        "official",
+        "官方的",
+        "official",
+        "I can use official."
+      ],
+      [
+        "law",
+        "法律；法规",
+        "law",
+        "I can use law."
+      ],
+      [
+        "nature reserve",
+        "自然保护区",
+        "nature reserve",
+        "I can use nature reserve."
+      ]
+    ],
+    "readingLines": [
+      "The painting is a priceless masterpiece.",
+      "The exhibition shows every detail clearly.",
+      "People value the animals in the nature reserve.",
+      "The law protects rare animals.",
+      "The official report shows some progress.",
+      "Visitors must not damage the artwork."
+    ],
+    "grammar": {
+      "rule": "阅读先看题目关键词，再回原文找同词或近义词。答案必须在原文附近，不凭感觉猜。",
+      "examples": [
+        "The painting is a priceless masterpiece.",
+        "The exhibition shows every detail clearly.",
+        "People value the animals in the nature reserve."
+      ]
+    },
+    "quiz": [
+      [
+        "Which word means ‘无价的’?",
+        [
+          "A. separate",
+          "A. priceless",
+          "A. official"
+        ]
+      ],
+      [
+        "What protects rare animals?",
+        [
+          "A. The law",
+          "A. A mirror",
+          "A. A copy"
+        ]
+      ],
+      [
+        "Visitors must not ___ the artwork.",
+        [
+          "A. value",
+          "A. damage",
+          "A. recognize"
+        ]
+      ]
+    ],
+    "answers": "1 B；2 A；3 B。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "给每题圈关键词，在句子中划出答案依据；把题2答案写成完整句。",
+      "questions": [
+        "完成后检查主语、动词和拼写。"
+      ],
+      "answers": "按当天学习包要求自查。"
+    },
+    "parent": "只检查五项是否完成，随机抽5词，不讲题。"
+  },
+  "fri": {
+    "label": "周五",
+    "title": "周五：八下 Unit 6-8 常用词 + 六句短文",
+    "words": [
+      [
+        "opportunity",
+        "机会",
+        "opportunity",
+        "I can use opportunity."
+      ],
+      [
+        "acquire",
+        "获得；得到",
+        "acquire",
+        "I can use acquire."
+      ],
+      [
+        "conclusion",
+        "结束；结尾",
+        "conclusion",
+        "I can use conclusion."
+      ],
+      [
+        "creative",
+        "创造性的",
+        "creative",
+        "I can use creative."
+      ],
+      [
+        "pleasure",
+        "高兴；快乐",
+        "pleasure",
+        "I can use pleasure."
+      ],
+      [
+        "worth",
+        "有……价值",
+        "worth",
+        "I can use worth."
+      ],
+      [
+        "afford",
+        "承担得起",
+        "afford",
+        "I can use afford."
+      ],
+      [
+        "mistake",
+        "错误；失误",
+        "mistake",
+        "I can use mistake."
+      ],
+      [
+        "destroy",
+        "摧毁",
+        "destroy",
+        "I can use destroy."
+      ],
+      [
+        "average",
+        "平均的",
+        "average",
+        "I can use average."
+      ],
+      [
+        "probable",
+        "很可能发生的",
+        "probable",
+        "I can use probable."
+      ],
+      [
+        "deliver",
+        "传送；运载",
+        "deliver",
+        "I can use deliver."
+      ],
+      [
+        "mention",
+        "提到；说到",
+        "mention",
+        "I can use mention."
+      ],
+      [
+        "frightened",
+        "受惊的；害怕的",
+        "frightened",
+        "I can use frightened."
+      ],
+      [
+        "fear",
+        "害怕；惧怕",
+        "fear",
+        "I can use fear."
+      ],
+      [
+        "refuse",
+        "拒绝；回绝",
+        "refuse",
+        "I can use refuse."
+      ],
+      [
+        "emergency",
+        "紧急情况",
+        "emergency",
+        "I can use emergency."
+      ],
+      [
+        "unnecessary",
+        "不需要的；多余的",
+        "unnecessary",
+        "I can use unnecessary."
+      ],
+      [
+        "agree with",
+        "同意；意见一致",
+        "agree with",
+        "I can use agree with."
+      ],
+      [
+        "in all directions",
+        "向四面八方",
+        "in all directions",
+        "I can use in all directions."
+      ]
+    ],
+    "readingLines": [
+      "My English score is not high now.",
+      "I often make mistakes in words and reading.",
+      "I learn twenty words every day.",
+      "I read a short passage and record my voice.",
+      "I keep practising because I want to improve.",
+      "I hope to make progress next week."
+    ],
+    "grammar": {
+      "rule": "作文只写六个完整句：现状、困难、做法1、做法2、理由、目标。先保证主语和动词正确。",
+      "examples": [
+        "My English score is not high now.",
+        "I often make mistakes in words and reading.",
+        "I learn twenty words every day."
+      ]
+    },
+    "quiz": [
+      [
+        "I often ___ mistakes.",
+        [
+          "A. make",
+          "A. makes",
+          "A. made"
+        ]
+      ],
+      [
+        "I keep ___ every day.",
+        [
+          "A. practise",
+          "A. practising",
+          "A. to practising"
+        ]
+      ],
+      [
+        "I hope ___ progress.",
+        [
+          "A. make",
+          "A. making",
+          "A. to make"
+        ]
+      ]
+    ],
+    "answers": "1 A；2 B；3 C。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "仿照六句写《My English Plan》。允许换词，不允许少于六句；写完圈出每句主语和动词。",
+      "questions": [
+        "完成后检查主语、动词和拼写。"
+      ],
+      "answers": "按当天学习包要求自查。"
+    },
+    "parent": "只检查五项是否完成，随机抽5词，不讲题。"
+  },
+  "sat": {
+    "label": "周六",
+    "title": "周六：第6周50分小测",
+    "words": [
+      [
+        "elderly",
+        "上了年纪的",
+        "elderly",
+        "I can use elderly."
+      ],
+      [
+        "offer",
+        "主动提出",
+        "offer",
+        "I can use offer."
+      ],
+      [
+        "serious",
+        "严重的",
+        "serious",
+        "I can use serious."
+      ],
+      [
+        "disease",
+        "疾病",
+        "disease",
+        "I can use disease."
+      ],
+      [
+        "shake",
+        "摇动；抖动",
+        "shake",
+        "I can use shake."
+      ],
+      [
+        "clap",
+        "鼓掌；拍手",
+        "clap",
+        "I can use clap."
+      ],
+      [
+        "madam",
+        "夫人；女士",
+        "madam",
+        "I can use madam."
+      ],
+      [
+        "boss",
+        "老板",
+        "boss",
+        "I can use boss."
+      ],
+      [
+        "performance",
+        "表演；演出",
+        "performance",
+        "I can use performance."
+      ],
+      [
+        "combine",
+        "组合；联合",
+        "combine",
+        "I can use combine."
+      ],
+      [
+        "theme",
+        "主题",
+        "theme",
+        "I can use theme."
+      ],
+      [
+        "advanced",
+        "先进的",
+        "advanced",
+        "I can use advanced."
+      ],
+      [
+        "master",
+        "著名画家；大师",
+        "master",
+        "I can use master."
+      ],
+      [
+        "masterpiece",
+        "代表作；杰作",
+        "masterpiece",
+        "I can use masterpiece."
+      ],
+      [
+        "alone",
+        "独自",
+        "alone",
+        "I can use alone."
+      ],
+      [
+        "copy",
+        "仿造；复制品",
+        "copy",
+        "I can use copy."
+      ],
+      [
+        "opportunity",
+        "机会",
+        "opportunity",
+        "I can use opportunity."
+      ],
+      [
+        "acquire",
+        "获得；得到",
+        "acquire",
+        "I can use acquire."
+      ],
+      [
+        "conclusion",
+        "结束；结尾",
+        "conclusion",
+        "I can use conclusion."
+      ],
+      [
+        "creative",
+        "创造性的",
+        "creative",
+        "I can use creative."
+      ]
+    ],
+    "readingLines": [
+      "Ran got 45 out of 140.",
+      "He reviews twenty words every day.",
+      "He records his voice.",
+      "He finds key words in a passage.",
+      "Small steps help him make progress."
+    ],
+    "grammar": {
+      "rule": "先独立完成50分小测，再对答案。",
+      "examples": [
+        "一般现在时",
+        "一般过去时",
+        "to do / doing"
+      ]
+    },
+    "quiz": [
+      [
+        "He ___ his mother every day.",
+        [
+          "A. help",
+          "B. helps",
+          "C. helped"
+        ]
+      ],
+      [
+        "We ___ a show yesterday.",
+        [
+          "A. watch",
+          "B. watched",
+          "C. watches"
+        ]
+      ],
+      [
+        "I want ___ English.",
+        [
+          "A. improve",
+          "B. to improve",
+          "C. improving"
+        ]
+      ]
+    ],
+    "answers": "1 B；2 B；3 B。完整试卷和阅读答案见第6周学习包。",
+    "readingTask": {
+      "type": "周测",
+      "passage": "完成50分小测并记录分数。",
+      "questions": [
+        "单词20分",
+        "语法15分",
+        "阅读15分"
+      ],
+      "answers": "30分为本周达标线。"
+    },
+    "parent": "记录分数，不讲题。"
+  },
+  "sun": {
+    "label": "周日",
+    "title": "周日：错词错题复盘",
+    "words": [
+      [
+        "elderly",
+        "上了年纪的",
+        "elderly",
+        "I can use elderly."
+      ],
+      [
+        "offer",
+        "主动提出",
+        "offer",
+        "I can use offer."
+      ],
+      [
+        "serious",
+        "严重的",
+        "serious",
+        "I can use serious."
+      ],
+      [
+        "disease",
+        "疾病",
+        "disease",
+        "I can use disease."
+      ],
+      [
+        "shake",
+        "摇动；抖动",
+        "shake",
+        "I can use shake."
+      ],
+      [
+        "clap",
+        "鼓掌；拍手",
+        "clap",
+        "I can use clap."
+      ],
+      [
+        "madam",
+        "夫人；女士",
+        "madam",
+        "I can use madam."
+      ],
+      [
+        "boss",
+        "老板",
+        "boss",
+        "I can use boss."
+      ],
+      [
+        "performance",
+        "表演；演出",
+        "performance",
+        "I can use performance."
+      ],
+      [
+        "combine",
+        "组合；联合",
+        "combine",
+        "I can use combine."
+      ],
+      [
+        "theme",
+        "主题",
+        "theme",
+        "I can use theme."
+      ],
+      [
+        "advanced",
+        "先进的",
+        "advanced",
+        "I can use advanced."
+      ],
+      [
+        "master",
+        "著名画家；大师",
+        "master",
+        "I can use master."
+      ],
+      [
+        "masterpiece",
+        "代表作；杰作",
+        "masterpiece",
+        "I can use masterpiece."
+      ],
+      [
+        "alone",
+        "独自",
+        "alone",
+        "I can use alone."
+      ],
+      [
+        "copy",
+        "仿造；复制品",
+        "copy",
+        "I can use copy."
+      ],
+      [
+        "opportunity",
+        "机会",
+        "opportunity",
+        "I can use opportunity."
+      ],
+      [
+        "acquire",
+        "获得；得到",
+        "acquire",
+        "I can use acquire."
+      ],
+      [
+        "conclusion",
+        "结束；结尾",
+        "conclusion",
+        "I can use conclusion."
+      ],
+      [
+        "creative",
+        "创造性的",
+        "creative",
+        "I can use creative."
+      ]
+    ],
+    "readingLines": [
+      "I correct my real mistakes.",
+      "I check the subject and the verb.",
+      "I will keep going next week."
+    ],
+    "grammar": {
+      "rule": "只补真实错点：10个错词、5道错题、1次作文检查。",
+      "examples": [
+        "原答案",
+        "正确答案",
+        "错因"
+      ]
+    },
+    "quiz": [
+      [
+        "完整句至少要有什么？",
+        [
+          "A. 主语和动词",
+          "B. 两个形容词",
+          "C. 长单词"
+        ]
+      ],
+      [
+        "yesterday常提示什么时态？",
+        [
+          "A. 一般现在时",
+          "B. 一般过去时",
+          "C. 将来时"
+        ]
+      ],
+      [
+        "阅读答案先去哪里找？",
+        [
+          "A. 原文关键词附近",
+          "B. 凭感觉",
+          "C. 只看标题"
+        ]
+      ]
+    ],
+    "answers": "1 A；2 B；3 A。",
+    "readingTask": {
+      "type": "复盘",
+      "passage": "从本周材料挑真实错题。",
+      "questions": [
+        "10个错词",
+        "5道错题",
+        "检查六句作文"
+      ],
+      "answers": "写出正确答案和错因即完成。"
+    },
+    "parent": "确认复盘表有5条，签名即可。"
+  }
+};
+
 const weeks = {
   week1: { label: "第1周", title: "第1周：先把基础词和小语法稳住", scoreMax: 100, tasks: week1Tasks, days: week1Data, test: ["抽查30个单词中文意思，30分。", "抽查10个单词拼写，20分。", "语法20题，20分。", "短阅读1篇5题，30分。"], quote: "第1周先别贪多。每天把单词、录音、错题做完，基础分就开始往回捡。" },
   week2: { label: "第2周", title: "第2周：接着练时态和短阅读", scoreMax: 50, tasks: week2Tasks, days: week2Data, test: ["单词中文10题，10分。", "单词拼写10题，10分。", "语法5题，15分。", "短阅读1篇5题，15分。"], quote: "第2周只求稳：每天把20个词、3道语法题、1个阅读任务和1条错题记录做完，就是在往60分靠近。" },
   week3: { label: "第3周", title: "第3周：继续练情态动词、比较级和阅读定位", scoreMax: 50, tasks: week2Tasks, days: week3Data, test: ["单词中文10题，10分。", "单词拼写10题，10分。", "语法5题，15分。", "短阅读1篇5题，15分。"], quote: "第3周还是只求稳：每天把20个词、3道语法题、1个阅读任务和1条错题记录做完，就已经在往60分靠近。" },
   week4: { label: "第4周", title: "第4周：补过去进行时、将来表达、频率副词、连接词和五句作文", scoreMax: 50, tasks: week2Tasks, days: week4Data, test: ["单词中文10题，10分。", "单词拼写10题，10分。", "语法/方法5题，15分。", "短阅读1篇5题，15分。"], quote: "第4周开始碰作文，但只写5句。每天照着小任务走，重点还是完整、少错、能坚持。" },
-  week5: { label: "第5周", title: "第5周：完成时、常见搭配、被动语态、阅读指代和六句作文", scoreMax: 50, tasks: week2Tasks, days: week5Data, test: ["单词中文10题，10分。", "单词拼写5题，10分。", "语法/方法5题，15分。", "短阅读1篇5题，15分。"], quote: "第5周只把难度抬半格：先认结构、会做基础题、能写六个完整句子。" }
+  week5: { label: "第5周", title: "第5周：完成时、常见搭配、被动语态、阅读指代和六句作文", scoreMax: 50, tasks: week2Tasks, days: week5Data, test: ["单词中文10题，10分。", "单词拼写5题，10分。", "语法/方法5题，15分。", "短阅读1篇5题，15分。"], quote: "第5周只把难度抬半格：先认结构、会做基础题、能写六个完整句子。" },
+  week6: { label: "第6周", title: "第6周：八下基础词、完整句、一般现在时、一般过去时、阅读定位和六句短文", scoreMax: 50, tasks: week2Tasks, days: week6Data, test: ["单词英译中10题，10分。", "单词中译英10题，10分。", "语法5题，15分。", "短阅读1篇5题，15分。"], quote: "期末45/140是起点，不是能力定论。第6周先把会做的基础题做对。" }
 };
 
 
 
 const stateKey = "rango-english-continuous-v1";
 const syncAppName = "rango-english-continuous-progress";
-const legacyKeys = { week1: "rango-english-week1", week2: "rango-english-week2", week3: "rango-english-week3", week4: "rango-english-week4", week5: "rango-english-week5" };
-const compatibleApps = [syncAppName, "rango-english-week1-progress", "rango-english-week2-progress", "rango-english-week3-progress", "rango-english-week4-progress", "rango-english-week5-progress", "rango-english-github-pages-progress"];
+const legacyKeys = { week1: "rango-english-week1", week2: "rango-english-week2", week3: "rango-english-week3", week4: "rango-english-week4", week5: "rango-english-week5", week6: "rango-english-week6" };
+const compatibleApps = [syncAppName, "rango-english-week1-progress", "rango-english-week2-progress", "rango-english-week3-progress", "rango-english-week4-progress", "rango-english-week5-progress", "rango-english-week6-progress", "rango-english-github-pages-progress"];
 let state = loadState();
 let currentWeek = state.currentWeek || "week1";
 let currentDay = state.currentDay || weekState(currentWeek).currentDay || "mon";
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;"); }
-function blank() { return { currentWeek: "week1", currentDay: "mon", weeks: { week1: { currentDay: "mon", weeklyScore: "", days: {} }, week2: { currentDay: "mon", weeklyScore: "", days: {} }, week3: { currentDay: "mon", weeklyScore: "", days: {} }, week4: { currentDay: "mon", weeklyScore: "", days: {} }, week5: { currentDay: "mon", weeklyScore: "", days: {} } } }; }
+function blank() { return { currentWeek: "week1", currentDay: "mon", weeks: { week1: { currentDay: "mon", weeklyScore: "", days: {} }, week2: { currentDay: "mon", weeklyScore: "", days: {} }, week3: { currentDay: "mon", weeklyScore: "", days: {} }, week4: { currentDay: "mon", weeklyScore: "", days: {} }, week5: { currentDay: "mon", weeklyScore: "", days: {} }, week6: { currentDay: "mon", weeklyScore: "", days: {} } } }; }
 function readJson(key) { try { const raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : null; } catch (e) { return null; } }
 function normWeek(input) { const src = input && typeof input === "object" ? input : {}; return { ...src, currentDay: src.currentDay || src.cur || "mon", weeklyScore: src.weeklyScore || src.score || "", days: src.days && typeof src.days === "object" ? src.days : {} }; }
 function hasData(input) { const w = normWeek(input); return Boolean(w.weeklyScore || Object.keys(w.days || {}).length); }
@@ -4959,6 +6209,7 @@ function loadState() {
   const old3 = readJson(legacyKeys.week3);
   const old4 = readJson(legacyKeys.week4);
   const old5 = readJson(legacyKeys.week5);
+  const old6 = readJson(legacyKeys.week6);
   if (!hasData(next.weeks.week1)) {
     if (hasData(old1)) next.weeks.week1 = normWeek(old1);
     else if (old2 && old2.previousWeeks && hasData(old2.previousWeeks.week1)) next.weeks.week1 = normWeek(old2.previousWeeks.week1);
@@ -4976,6 +6227,7 @@ function loadState() {
   }
   if (!hasData(next.weeks.week4) && hasData(old4)) next.weeks.week4 = normWeek(old4);
   if (!hasData(next.weeks.week5) && hasData(old5)) next.weeks.week5 = normWeek(old5);
+  if (!hasData(next.weeks.week6) && hasData(old6)) next.weeks.week6 = normWeek(old6);
   return next;
 }
 function weekState(key) { state.weeks ||= {}; state.weeks[key] = normWeek(state.weeks[key]); return state.weeks[key]; }
@@ -4989,7 +6241,7 @@ function summary(key) { const d = weekState(key).days || {}; const keys = Object
 function setSyncStatus(text) { document.querySelector("#syncStatus").textContent = text; }
 function encodeProgressCode(payload) { const bytes = new TextEncoder().encode(JSON.stringify(payload)); let binary = ""; bytes.forEach(b => binary += String.fromCharCode(b)); return btoa(binary); }
 function decodeProgressCode(code) { const clean = code.trim(); return JSON.parse(clean.startsWith("{") ? clean : new TextDecoder().decode(Uint8Array.from(atob(clean), c => c.charCodeAt(0)))); }
-function payload() { save(); return { app: syncAppName, version: 5, exportedAt: new Date().toISOString(), state }; }
+function payload() { save(); return { app: syncAppName, version: 6, exportedAt: new Date().toISOString(), state }; }
 function importPayload(data) {
   const imported = data && (data.state || data.store);
   if (!data || !compatibleApps.includes(data.app) || !imported || typeof imported !== "object") throw new Error("bad data");
@@ -5013,6 +6265,9 @@ function importPayload(data) {
   } else if (data.app === "rango-english-week5-progress") {
     next.weeks.week5 = normWeek(imported);
     next.currentWeek = "week5";
+  } else if (data.app === "rango-english-week6-progress") {
+    next.weeks.week6 = normWeek(imported);
+    next.currentWeek = "week6";
   } else {
     next.weeks.week1 = normWeek(imported);
     next.currentWeek = "week1";
@@ -5031,13 +6286,13 @@ function renderWords() { const data = days()[currentDay]; const ds = dayState();
 function renderPractice() { const data = days()[currentDay]; const ds = dayState(); const lines = document.querySelector("#readingLinesPanel"); const taskPanel = document.querySelector("#readingTaskPanel"); lines.hidden = !data.readingLines; document.querySelector("#readingLinesBox").innerHTML = data.readingLines ? "<ol class=\"reading-lines\">" + data.readingLines.map(x => "<li>" + esc(x) + "</li>").join("") + "</ol>" : ""; document.querySelector("#grammarBox").innerHTML = "<div class=\"grammar-rule\">" + esc(data.grammar.rule) + "</div><ul class=\"simple-list\">" + data.grammar.examples.map(x => "<li>" + esc(x) + "</li>").join("") + "</ul>"; document.querySelector("#quizTitle").textContent = data.quiz.length <= 3 ? "语法3题" : "今日小练习"; document.querySelector("#quizBox").innerHTML = data.quiz.map((q, i) => "<div class=\"quiz-item\"><strong>" + (i + 1) + ". " + esc(q[0]) + "</strong><div class=\"quiz-options\">" + q[1].map(o => "<button class=\"quiz-option " + (ds.answers[i] === o ? "selected" : "") + "\" data-question=\"" + i + "\" data-answer=\"" + esc(o) + "\">" + esc(o) + "</button>").join("") + "</div></div>").join(""); if (data.readingTask) { const r = data.readingTask; taskPanel.hidden = false; document.querySelector("#readingTaskBox").innerHTML = "<p class=\"tag\">" + esc(r.type) + "</p><p class=\"passage\">" + esc(r.passage) + "</p><ol class=\"simple-list\">" + r.questions.map(x => "<li>" + esc(x).replace(/^\d+\.\s*/, "") + "</li>").join("") + "</ol><details class=\"answer-box\"><summary>查看答案</summary><p>" + esc(r.answers) + "</p></details>"; } else { taskPanel.hidden = true; document.querySelector("#readingTaskBox").innerHTML = ""; } document.querySelector("#quizResult").textContent = ds.quizResult || ""; }
 function renderParent() { const ds = dayState(); const ws = weekState(currentWeek); const done = Object.values(ds.tasks || {}).filter(Boolean).length; const okWords = Object.values(ds.words || {}).filter(v => v === "ok").length; const hardWords = Object.values(ds.words || {}).filter(v => v === "hard").length; const checks = [[plan().label + "今日任务", done + "/5 项完成", done >= 5], ["单词", "已标记会了 " + okWords + " 个，不会 " + hardWords + " 个", okWords >= 15], ["朗读录音", ds.record ? "孩子已点完成录音" : "还没点完成录音", ds.record], ["错题本", ds.mistake ? "已保存错题记录" : "今天还没写错题", Boolean(ds.mistake)], ["周测分数", ws.weeklyScore ? ws.weeklyScore + " 分" : "周六再填", Boolean(ws.weeklyScore)]]; document.querySelector("#parentChecklist").innerHTML = checks.map(x => "<div class=\"parent-item " + (x[2] ? "ok" : "") + "\"><strong>" + x[0] + "</strong><br>" + x[1] + "</div>").join(""); document.querySelector("#weeklyTestList").innerHTML = plan().test.map(x => "<li>" + esc(x) + "</li>").join(""); document.querySelector("#weeklyScoreLabel").textContent = plan().label + "小测分数"; document.querySelector("#weeklyScore").max = plan().scoreMax; document.querySelector("#weeklyScore").placeholder = plan().scoreMax === 50 ? "例如 36" : "例如 62"; document.querySelector("#weeklyScore").value = ws.weeklyScore || ""; document.querySelector("#kidQuote").textContent = plan().quote; renderContinuitySummary(); }
 function renderContinuitySummary() {
-  const weekKeys = ["week1", "week2", "week3", "week4", "week5"];
+  const weekKeys = ["week1", "week2", "week3", "week4", "week5", "week6"];
   const totals = weekKeys.map(summary);
   const totalComplete = totals.reduce((n, item) => n + item.complete, 0);
   const totalActive = totals.reduce((n, item) => n + item.active, 0);
   const totalMistakes = totals.reduce((n, item) => n + item.mistakes, 0);
   const scoreText = totals.map((item, index) => "第" + (index + 1) + "周：" + (item.score ? item.score + " 分" : "未填")).join("；");
-  document.querySelector("#continuitySummary").innerHTML = "<div class=\"continuity-card wide\"><strong>连续五周记录放在一起</strong><span>切到第1周、第2周、第3周、第4周或第5周，打卡、错题、5次周测分数都会存在同一个学习记录里。</span></div><div class=\"continuity-card\"><strong>" + totalComplete + " 天</strong><span>五周累计完成打卡</span></div><div class=\"continuity-card\"><strong>" + totalActive + " 天</strong><span>五周有学习记录</span></div><div class=\"continuity-card\"><strong>" + totalMistakes + " 条</strong><span>五周累计错题</span></div><div class=\"continuity-card wide\"><strong>五周周测分数</strong><span>" + scoreText + "</span></div>";
+  document.querySelector("#continuitySummary").innerHTML = "<div class=\"continuity-card wide\"><strong>连续六周记录放在一起</strong><span>切到第1周、第2周、第3周、第4周、第5周、第6周或第6周，打卡、错题、6次周测分数都会存在同一个学习记录里。</span></div><div class=\"continuity-card\"><strong>" + totalComplete + " 天</strong><span>六周累计完成打卡</span></div><div class=\"continuity-card\"><strong>" + totalActive + " 天</strong><span>五周有学习记录</span></div><div class=\"continuity-card\"><strong>" + totalMistakes + " 条</strong><span>六周累计错题</span></div><div class=\"continuity-card wide\"><strong>五周周测分数</strong><span>" + scoreText + "</span></div>";
 }
 function updateDoneCount() { const ds = dayState(); document.querySelector("#doneCount").textContent = Object.values(ds.tasks || {}).filter(Boolean).length + (ds.record ? 1 : 0) + (ds.mistake ? 1 : 0); }
 function renderAll() { renderWeekSelect(); renderDaySelect(); renderTasks(); renderWords(); renderPractice(); renderParent(); updateDoneCount(); }
@@ -5052,12 +6307,12 @@ document.querySelector("#checkQuiz").addEventListener("click", () => { const dat
 document.querySelector("#recordDone").addEventListener("click", () => { dayState().record = true; save(); renderParent(); updateDoneCount(); alert("已记录。现在去错题本写1-3道错题。"); });
 document.querySelector("#saveMistake").addEventListener("click", () => { dayState().mistake = document.querySelector("#mistakeNote").value.trim(); save(); renderParent(); updateDoneCount(); alert("错题已保存。"); });
 document.querySelector("#saveScore").addEventListener("click", () => { weekState(currentWeek).weeklyScore = document.querySelector("#weeklyScore").value.trim(); save(); renderParent(); });
-document.querySelector("#downloadBackup").addEventListener("click", () => { const date = new Date().toISOString().slice(0, 10); downloadTextFile("然哥英语连续五周学习记录-" + date + ".json", JSON.stringify(payload(), null, 2)); setSyncStatus("连续五周学习记录已下载。换手机时，把这个文件发到新手机，再点“一键导入学习记录”。"); });
+document.querySelector("#downloadBackup").addEventListener("click", () => { const date = new Date().toISOString().slice(0, 10); downloadTextFile("然哥英语连续六周学习记录-" + date + ".json", JSON.stringify(payload(), null, 2)); setSyncStatus("连续六周学习记录已下载。换手机时，把这个文件发到新手机，再点“一键导入学习记录”。"); });
 document.querySelector("#chooseBackup").addEventListener("click", () => document.querySelector("#backupFile").click());
 document.querySelector("#backupFile").addEventListener("change", async e => { const file = e.target.files && e.target.files[0]; e.target.value = ""; if (!file) return; try { applyPayload(JSON.parse(await file.text())); } catch (err) { setSyncStatus("这个文件不能导入。新版、旧第1周、旧第2周连续版、旧第3周独立版、旧第4周的学习记录文件都可以；请确认选的是正确备份文件。"); } });
 document.querySelector("#exportProgress").addEventListener("click", async () => { const code = encodeProgressCode(payload()); document.querySelector("#progressCode").value = code; try { const copied = await copyText(code); setSyncStatus(copied ? "连续五周进度码已生成并复制。发给家长后，在家长手机导入即可。" : "进度码已生成。请手动复制后发给家长。"); } catch (e) { setSyncStatus("进度码已生成。请手动复制后发给家长。"); } });
 document.querySelector("#importProgress").addEventListener("click", () => { const code = document.querySelector("#progressCode").value.trim(); if (!code) return setSyncStatus("请先粘贴孩子手机发来的进度码。"); try { applyPayload(decodeProgressCode(code)); } catch (e) { setSyncStatus("进度码不能识别。请确认整段复制，没有少字或多空格。旧第1周/第2周连续版/第3周独立版/第4周进度码也可以导入。"); } });
-document.querySelector("#resetAll").addEventListener("click", () => { if (!confirm("确定清空这台手机/电脑上的连续五周学习记录吗？旧版记录不会一起删除。")) return; localStorage.removeItem(stateKey); state = blank(); currentWeek = "week1"; currentDay = "mon"; renderAll(); });
+document.querySelector("#resetAll").addEventListener("click", () => { if (!confirm("确定清空这台手机/电脑上的连续六周学习记录吗？旧版记录不会一起删除。")) return; localStorage.removeItem(stateKey); state = blank(); currentWeek = "week1"; currentDay = "mon"; renderAll(); });
 save();
 renderAll();
 

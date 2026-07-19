@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>然哥英语提分小程序｜第1周-第5周连续周计划版</title>
+  <title>然哥英语提分小程序｜第1周-第8周连续周计划版</title>
   <style>
 :root {
   --bg: #f5f7f2;
@@ -162,9 +162,9 @@ footer { padding: 12px 18px 24px; text-align: center; }
 <body>
   <header class="app-header">
     <div>
-      <p class="eyebrow" id="headerWeekLabel">八下英语 · 第1周-第5周连续周计划</p>
+      <p class="eyebrow" id="headerWeekLabel">八下英语 · 第1周-第8周连续周计划</p>
       <h1>然哥英语提分</h1>
-      <p class="sub">真正的第1周-第5周连续版：一个入口切四周，每天晚上 8:30-9:20。</p>
+      <p class="sub">真正的第1周-第8周连续版：一个入口切八周，每天晚上 8:30-9:20。</p>
     </div>
     <div class="score-card">
       <span id="doneCount">0</span>
@@ -182,7 +182,7 @@ footer { padding: 12px 18px 24px; text-align: center; }
   <main>
     <section id="today" class="view active">
       <div class="panel">
-        <h2 id="weekTitle">第1周-第5周连续周计划</h2>
+        <h2 id="weekTitle">第1周-第8周连续周计划</h2>
         <p class="plain" id="weekHint">先选第几周，再选周几。</p>
         <label class="label" for="weekSelect">选择第几周</label>
         <select id="weekSelect"></select>
@@ -248,8 +248,8 @@ footer { padding: 12px 18px 24px; text-align: center; }
 
     <section id="parent" class="view">
       <div class="panel">
-        <h2>第1周 + 第2周 + 第3周 + 第4周 + 第5周 + 第6周 + 第7周连续进度</h2>
-        <p class="plain">家长只看这一块，就知道七周有没有接上。上面切到第1周、第2周、第3周、第4周、第5周、第6周、第7周或第6周，可以分别查看每天细节。</p>
+        <h2>第1周 + 第2周 + 第3周 + 第4周 + 第5周 + 第6周 + 第7周 + 第8周连续进度</h2>
+        <p class="plain">家长只看这一块，就知道八周有没有接上。上面切到第1周、第2周、第3周、第4周、第5周、第6周、第7周或第8周，可以分别查看每天细节。</p>
         <div id="continuitySummary" class="continuity-grid"></div>
       </div>
 
@@ -269,14 +269,14 @@ footer { padding: 12px 18px 24px; text-align: center; }
 
       <div class="panel">
         <h2>学习进度同步</h2>
-        <p class="plain">换手机、换浏览器前，先下载一份连续七周学习记录。新版会把第1周、第2周、第3周、第4周、第5周、第6周、第7周放在一个文件里。旧第1周、旧第2周连续版、旧第3周独立版、旧第4周、第5周、第6周单独内容备份也可以导入。</p>
+        <p class="plain">换手机、换浏览器前，先下载一份连续八周学习记录。新版会把第1周、第2周、第3周、第4周、第5周、第6周、第7周、第8周放在一个文件里。旧第1周、旧第2周连续版、旧第3周独立版、旧第4周、第5周、第6周、第7周单独内容备份也可以导入。</p>
         <button class="primary" id="downloadBackup">一键下载学习记录</button>
         <button class="secondary" id="chooseBackup">一键导入学习记录</button>
         <input id="backupFile" type="file" accept=".json,application/json" hidden>
         <p class="plain">如果微信里不方便传文件，也可以用下面的进度码当备用办法。</p>
         <button class="secondary" id="exportProgress">生成并复制进度码</button>
         <label class="label sync-label" for="progressCode">进度码</label>
-        <textarea id="progressCode" rows="6" placeholder="孩子手机：点上面的按钮生成连续五周进度码。
+        <textarea id="progressCode" rows="6" placeholder="孩子手机：点上面的按钮生成连续八周进度码。
 家长手机：把孩子发来的进度码粘贴到这里，再点导入。"></textarea>
         <button class="primary" id="importProgress">导入到这台手机</button>
         <p id="syncStatus" class="result"></p>
@@ -7427,6 +7427,1278 @@ const week7Data = {
   }
 };
 
+const week8Data = {
+  "mon": {
+    "label": "周一",
+    "title": "周一：生活与资源词 + 可数和不可数名词",
+    "words": [
+      [
+        "salt",
+        "盐",
+        "salt",
+        "I can use salt."
+      ],
+      [
+        "drinking water",
+        "饮用水",
+        "drinking water",
+        "I can use drinking water."
+      ],
+      [
+        "role",
+        "作用；角色",
+        "role",
+        "I can use role."
+      ],
+      [
+        "goods",
+        "商品；货物",
+        "goods",
+        "I can use goods."
+      ],
+      [
+        "overseas",
+        "海外的；在海外",
+        "overseas",
+        "I can use overseas."
+      ],
+      [
+        "global",
+        "全球的",
+        "global",
+        "I can use global."
+      ],
+      [
+        "income",
+        "收入",
+        "income",
+        "I can use income."
+      ],
+      [
+        "nearly",
+        "几乎；差不多",
+        "nearly",
+        "I can use nearly."
+      ],
+      [
+        "business",
+        "商业；生意",
+        "business",
+        "I can use business."
+      ],
+      [
+        "leisure",
+        "空闲；休闲",
+        "leisure",
+        "I can use leisure."
+      ],
+      [
+        "throughout",
+        "遍及；贯穿",
+        "throughout",
+        "I can use throughout."
+      ],
+      [
+        "duty",
+        "责任；职责",
+        "duty",
+        "I can use duty."
+      ],
+      [
+        "at once",
+        "马上；立刻",
+        "at once",
+        "I can use at once."
+      ],
+      [
+        "play a role in",
+        "在……中起作用",
+        "play a role in",
+        "I can use play a role in."
+      ],
+      [
+        "steam engine",
+        "蒸汽机",
+        "steam engine",
+        "I can use steam engine."
+      ],
+      [
+        "battery",
+        "电池",
+        "battery",
+        "I can use battery."
+      ],
+      [
+        "electricity",
+        "电",
+        "electricity",
+        "I can use electricity."
+      ],
+      [
+        "task",
+        "任务",
+        "task",
+        "I can use task."
+      ],
+      [
+        "safety",
+        "安全",
+        "safety",
+        "I can use safety."
+      ],
+      [
+        "rule",
+        "规则",
+        "rule",
+        "I can use rule."
+      ]
+    ],
+    "readingLines": [
+      "We need some drinking water.",
+      "There are many goods in the shop.",
+      "We do not have much leisure time.",
+      "Do you have any salt?",
+      "Electricity plays a role in daily life.",
+      "Safety is everyone's duty."
+    ],
+    "grammar": {
+      "rule": "能一个个数的名词用many，如many batteries；不能直接一个个数的名词用much，如much water。肯定句常用some，疑问句和否定句常用any。",
+      "examples": [
+        "We need some drinking water.",
+        "There are many goods in the shop.",
+        "We do not have much leisure time."
+      ]
+    },
+    "quiz": [
+      [
+        "We need ___ water.",
+        [
+          "A. many",
+          "B. some",
+          "C. a"
+        ],
+        "B. some"
+      ],
+      [
+        "There are ___ batteries.",
+        [
+          "A. much",
+          "B. many",
+          "C. any"
+        ],
+        "B. many"
+      ],
+      [
+        "Do you have ___ salt?",
+        [
+          "A. any",
+          "B. many",
+          "C. an"
+        ],
+        "A. any"
+      ]
+    ],
+    "answers": "1 B；2 B；3 A。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "把这8个词分成两组：water、salt、battery、task、goods、electricity、rule、leisure。能数的写C，不能直接数的写U；再用some或any写2句。",
+      "questions": [
+        "完成后按参考答案或自查要求检查。"
+      ],
+      "answers": "C：battery、task、goods、rule。U：water、salt、electricity、leisure。例：We need some water. / Do you have any batteries?"
+    },
+    "parent": "随机抽5词，确认录音、3题、小任务和错题记录已完成。"
+  },
+  "tue": {
+    "label": "周二",
+    "title": "周二：电器与规则词 + there be句型",
+    "words": [
+      [
+        "switch-off",
+        "关闭；关掉",
+        "switch-off",
+        "I can use switch-off."
+      ],
+      [
+        "while",
+        "在……期间；当……时",
+        "while",
+        "I can use while."
+      ],
+      [
+        "tablet",
+        "平板电脑",
+        "tablet",
+        "I can use tablet."
+      ],
+      [
+        "fridge",
+        "冰箱",
+        "fridge",
+        "I can use fridge."
+      ],
+      [
+        "yogurt",
+        "酸奶",
+        "yogurt",
+        "I can use yogurt."
+      ],
+      [
+        "apartment",
+        "公寓",
+        "apartment",
+        "I can use apartment."
+      ],
+      [
+        "household",
+        "家庭的；家用的",
+        "household",
+        "I can use household."
+      ],
+      [
+        "against",
+        "反对；靠着",
+        "against",
+        "I can use against."
+      ],
+      [
+        "speed",
+        "速度",
+        "speed",
+        "I can use speed."
+      ],
+      [
+        "instruction",
+        "用法说明；指示",
+        "instruction",
+        "I can use instruction."
+      ],
+      [
+        "connect",
+        "连接",
+        "connect",
+        "I can use connect."
+      ],
+      [
+        "device",
+        "设备；装置",
+        "device",
+        "I can use device."
+      ],
+      [
+        "climate",
+        "气候",
+        "climate",
+        "I can use climate."
+      ],
+      [
+        "amount",
+        "数量",
+        "amount",
+        "I can use amount."
+      ],
+      [
+        "power",
+        "能量；电力",
+        "power",
+        "I can use power."
+      ],
+      [
+        "television set",
+        "电视机",
+        "television set",
+        "I can use television set."
+      ],
+      [
+        "landmark",
+        "地标",
+        "landmark",
+        "I can use landmark."
+      ],
+      [
+        "run out of",
+        "用完；耗尽",
+        "run out of",
+        "I can use run out of."
+      ],
+      [
+        "go bad",
+        "变质",
+        "go bad",
+        "I can use go bad."
+      ],
+      [
+        "electrical appliance",
+        "家用电器",
+        "electrical appliance",
+        "I can use electrical appliance."
+      ]
+    ],
+    "readingLines": [
+      "There is a fridge in the kitchen.",
+      "There are two devices on the table.",
+      "There is not much yogurt left.",
+      "Are there any instructions?",
+      "The tablet is connected to the television set.",
+      "Switch off the power when you leave."
+    ],
+    "grammar": {
+      "rule": "there is后面接一个或不可数名词；there are后面接多个。否定在is/are后加not，提问把is/are放到句首。",
+      "examples": [
+        "There is a fridge in the kitchen.",
+        "There are two devices on the table.",
+        "There is not much yogurt left."
+      ]
+    },
+    "quiz": [
+      [
+        "There ___ a fridge in the kitchen.",
+        [
+          "A. is",
+          "B. are",
+          "C. be"
+        ],
+        "A. is"
+      ],
+      [
+        "There ___ two devices on the table.",
+        [
+          "A. is",
+          "B. are",
+          "C. am"
+        ],
+        "B. are"
+      ],
+      [
+        "___ there any instructions?",
+        [
+          "A. Is",
+          "B. Are",
+          "C. Do"
+        ],
+        "B. Are"
+      ]
+    ],
+    "answers": "1 A；2 B；3 B。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "读六句后，画一个简单房间图，再写4句：2句There is、1句There are、1句Is/Are there问句。",
+      "questions": [
+        "完成后按参考答案或自查要求检查。"
+      ],
+      "answers": "例：There is a fridge. There is a tablet on the desk. There are two lights. Are there any electrical appliances?"
+    },
+    "parent": "随机抽5词，确认录音、3题、小任务和错题记录已完成。"
+  },
+  "wed": {
+    "label": "周三",
+    "title": "周三：人物贡献词 + 一般现在时肯定和否定",
+    "words": [
+      [
+        "contribution",
+        "贡献",
+        "contribution",
+        "I can use contribution."
+      ],
+      [
+        "hero",
+        "英雄",
+        "hero",
+        "I can use hero."
+      ],
+      [
+        "pioneer",
+        "先驱；先锋",
+        "pioneer",
+        "I can use pioneer."
+      ],
+      [
+        "technology",
+        "科技；技术",
+        "technology",
+        "I can use technology."
+      ],
+      [
+        "receive",
+        "收到；获得",
+        "receive",
+        "I can use receive."
+      ],
+      [
+        "engineering",
+        "工程；工程学",
+        "engineering",
+        "I can use engineering."
+      ],
+      [
+        "award",
+        "奖；奖项",
+        "award",
+        "I can use award."
+      ],
+      [
+        "education",
+        "教育",
+        "education",
+        "I can use education."
+      ],
+      [
+        "spend",
+        "花费；度过",
+        "spend",
+        "I can use spend."
+      ],
+      [
+        "research",
+        "研究",
+        "research",
+        "I can use research."
+      ],
+      [
+        "achieve",
+        "达到；实现",
+        "achieve",
+        "I can use achieve."
+      ],
+      [
+        "well-respected",
+        "受人尊敬的",
+        "well-respected",
+        "I can use well-respected."
+      ],
+      [
+        "found",
+        "创办；建立",
+        "found",
+        "I can use found."
+      ],
+      [
+        "eager",
+        "渴望的",
+        "eager",
+        "I can use eager."
+      ],
+      [
+        "raise",
+        "筹集；提升",
+        "raise",
+        "I can use raise."
+      ],
+      [
+        "mission",
+        "任务；使命",
+        "mission",
+        "I can use mission."
+      ],
+      [
+        "honour",
+        "荣誉",
+        "honour",
+        "I can use honour."
+      ],
+      [
+        "public",
+        "公众；公共的",
+        "public",
+        "I can use public."
+      ],
+      [
+        "approval",
+        "同意；批准",
+        "approval",
+        "I can use approval."
+      ],
+      [
+        "praise",
+        "表扬；赞扬",
+        "praise",
+        "I can use praise."
+      ]
+    ],
+    "readingLines": [
+      "Ms Chen works in engineering.",
+      "She spends time on research every day.",
+      "She receives an award for her contribution.",
+      "She does not stop learning.",
+      "Her work helps the public.",
+      "Many students praise this well-respected pioneer."
+    ],
+    "grammar": {
+      "rule": "说习惯或事实时，he/she/一个人后面的动词常加-s；否定用doesn't，后面的动词要回原形。I/you/we/they用don't。",
+      "examples": [
+        "Ms Chen works in engineering.",
+        "She spends time on research every day.",
+        "She receives an award for her contribution."
+      ]
+    },
+    "quiz": [
+      [
+        "She ___ time on research.",
+        [
+          "A. spend",
+          "B. spends",
+          "C. spent"
+        ],
+        "B. spends"
+      ],
+      [
+        "She does not ___ learning.",
+        [
+          "A. stops",
+          "B. stop",
+          "C. stopped"
+        ],
+        "B. stop"
+      ],
+      [
+        "They ___ this pioneer.",
+        [
+          "A. praises",
+          "B. praise",
+          "C. praising"
+        ],
+        "B. praise"
+      ]
+    ],
+    "answers": "1 B；2 B；3 B。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "短阅读：Li Hua's aunt is an engineer. She works on useful devices and spends much time on research. She does not work for awards, but people praise her contribution. ①What is her job? ②What does she work on? ③Does she work for awards? ④Why do people praise her?",
+      "questions": [
+        "完成后按参考答案或自查要求检查。"
+      ],
+      "answers": "1 An engineer. 2 Useful devices. 3 No, she doesn't. 4 Because of her contribution."
+    },
+    "parent": "随机抽5词，确认录音、3题、小任务和错题记录已完成。"
+  },
+  "thu": {
+    "label": "周四",
+    "title": "周四：勇气与榜样词 + 一般过去时问答",
+    "words": [
+      [
+        "society",
+        "社会",
+        "society",
+        "I can use society."
+      ],
+      [
+        "female",
+        "女性的；女子",
+        "female",
+        "I can use female."
+      ],
+      [
+        "admire",
+        "钦佩；赞赏",
+        "admire",
+        "I can use admire."
+      ],
+      [
+        "inspire",
+        "鼓舞；激励",
+        "inspire",
+        "I can use inspire."
+      ],
+      [
+        "regular",
+        "有规律的；定期的",
+        "regular",
+        "I can use regular."
+      ],
+      [
+        "feed",
+        "喂养",
+        "feed",
+        "I can use feed."
+      ],
+      [
+        "smokejumper",
+        "森林消防员",
+        "smokejumper",
+        "I can use smokejumper."
+      ],
+      [
+        "thick",
+        "浓的；厚的",
+        "thick",
+        "I can use thick."
+      ],
+      [
+        "certain",
+        "确定的；某个",
+        "certain",
+        "I can use certain."
+      ],
+      [
+        "kill",
+        "杀死",
+        "kill",
+        "I can use kill."
+      ],
+      [
+        "tool",
+        "工具",
+        "tool",
+        "I can use tool."
+      ],
+      [
+        "dead",
+        "死的",
+        "dead",
+        "I can use dead."
+      ],
+      [
+        "brave",
+        "勇敢的",
+        "brave",
+        "I can use brave."
+      ],
+      [
+        "tough",
+        "艰苦的；坚强的",
+        "tough",
+        "I can use tough."
+      ],
+      [
+        "fit",
+        "健康的；合适的",
+        "fit",
+        "I can use fit."
+      ],
+      [
+        "otherwise",
+        "否则",
+        "otherwise",
+        "I can use otherwise."
+      ],
+      [
+        "survive",
+        "幸存；生存",
+        "survive",
+        "I can use survive."
+      ],
+      [
+        "proud",
+        "自豪的",
+        "proud",
+        "I can use proud."
+      ],
+      [
+        "role model",
+        "榜样",
+        "role model",
+        "I can use role model."
+      ],
+      [
+        "be proud of",
+        "为……感到自豪",
+        "be proud of",
+        "I can use be proud of."
+      ]
+    ],
+    "readingLines": [
+      "The brave smokejumper entered the thick smoke.",
+      "She used a special tool.",
+      "She helped two people survive.",
+      "She did not give up.",
+      "Did her story inspire the students?",
+      "Yes, it did. They were proud of her."
+    ],
+    "grammar": {
+      "rule": "讲昨天或上周的事用过去式。否定用didn't + 动词原形；提问用Did + 主语 + 动词原形。看到did以后，后面的动词不要再变过去式。",
+      "examples": [
+        "The brave smokejumper entered the thick smoke.",
+        "She used a special tool.",
+        "She helped two people survive."
+      ]
+    },
+    "quiz": [
+      [
+        "She ___ a special tool yesterday.",
+        [
+          "A. use",
+          "B. used",
+          "C. uses"
+        ],
+        "B. used"
+      ],
+      [
+        "She did not ___ up.",
+        [
+          "A. gave",
+          "B. gives",
+          "C. give"
+        ],
+        "C. give"
+      ],
+      [
+        "___ her story inspire you?",
+        [
+          "A. Did",
+          "B. Does",
+          "C. Was"
+        ],
+        "A. Did"
+      ]
+    ],
+    "answers": "1 B；2 C；3 A。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "把六句按事情发生顺序标1-6；再回答：What did she use? Who did she help? Did she give up?",
+      "questions": [
+        "完成后按参考答案或自查要求检查。"
+      ],
+      "answers": "She used a special tool. She helped two people. No, she didn't."
+    },
+    "parent": "随机抽5词，确认录音、3题、小任务和错题记录已完成。"
+  },
+  "fri": {
+    "label": "周五",
+    "title": "周五：职业与能力词 + 八句短文",
+    "words": [
+      [
+        "possible",
+        "可能的",
+        "possible",
+        "I can use possible."
+      ],
+      [
+        "athlete",
+        "运动员",
+        "athlete",
+        "I can use athlete."
+      ],
+      [
+        "biologist",
+        "生物学家",
+        "biologist",
+        "I can use biologist."
+      ],
+      [
+        "instrument",
+        "乐器；仪器",
+        "instrument",
+        "I can use instrument."
+      ],
+      [
+        "interest",
+        "兴趣",
+        "interest",
+        "I can use interest."
+      ],
+      [
+        "career",
+        "职业；事业",
+        "career",
+        "I can use career."
+      ],
+      [
+        "lifetime",
+        "一生；终生",
+        "lifetime",
+        "I can use lifetime."
+      ],
+      [
+        "diamond",
+        "钻石",
+        "diamond",
+        "I can use diamond."
+      ],
+      [
+        "belt",
+        "腰带；带",
+        "belt",
+        "I can use belt."
+      ],
+      [
+        "shoot",
+        "射击；拍摄",
+        "shoot",
+        "I can use shoot."
+      ],
+      [
+        "extremely",
+        "极其；非常",
+        "extremely",
+        "I can use extremely."
+      ],
+      [
+        "curious",
+        "好奇的",
+        "curious",
+        "I can use curious."
+      ],
+      [
+        "increase",
+        "增加；增长",
+        "increase",
+        "I can use increase."
+      ],
+      [
+        "host",
+        "主持；主办",
+        "host",
+        "I can use host."
+      ],
+      [
+        "beyond",
+        "超出；在……之外",
+        "beyond",
+        "I can use beyond."
+      ],
+      [
+        "audience",
+        "观众",
+        "audience",
+        "I can use audience."
+      ],
+      [
+        "lively",
+        "活泼的；生动的",
+        "lively",
+        "I can use lively."
+      ],
+      [
+        "actually",
+        "事实上",
+        "actually",
+        "I can use actually."
+      ],
+      [
+        "sail",
+        "航行",
+        "sail",
+        "I can use sail."
+      ],
+      [
+        "ability",
+        "能力",
+        "ability",
+        "I can use ability."
+      ]
+    ],
+    "readingLines": [
+      "I want to be a biologist in the future.",
+      "I am curious about animals and plants.",
+      "I read science books every week.",
+      "This habit increases my knowledge.",
+      "Last Saturday, I visited a science museum.",
+      "I saw a lively show and used an instrument.",
+      "The visit made my career goal clearer.",
+      "I will keep learning and improve my ability."
+    ],
+    "grammar": {
+      "rule": "八句短文按‘职业—兴趣—日常行动—能力—一次经历—感受—目标—结尾’来写。前四句多用一般现在时，讲昨天或上周的经历用过去时。",
+      "examples": [
+        "I want to be a biologist in the future.",
+        "I am curious about animals and plants.",
+        "I read science books every week."
+      ]
+    },
+    "quiz": [
+      [
+        "I ___ science books every week.",
+        [
+          "A. read",
+          "B. reads",
+          "C. readed"
+        ],
+        "A. read"
+      ],
+      [
+        "Last Saturday, I ___ a museum.",
+        [
+          "A. visit",
+          "B. visited",
+          "C. visits"
+        ],
+        "B. visited"
+      ],
+      [
+        "I will keep ___.",
+        [
+          "A. learn",
+          "B. learned",
+          "C. learning"
+        ],
+        "C. learning"
+      ]
+    ],
+    "answers": "1 A；2 B；3 C。",
+    "readingTask": {
+      "type": "15分钟小任务",
+      "passage": "仿照八句写《My Future Career》。至少用want to、because或and、一个一般现在时句、一个过去时句和一个will句；写完圈出每句主语和动词。",
+      "questions": [
+        "完成后按参考答案或自查要求检查。"
+      ],
+      "answers": "按八句结构自查：句数够；每句有主语和动词；现在时、过去时、will句各至少1句；拼写不确定的词查本周词表。"
+    },
+    "parent": "随机抽5词，确认录音、3题、小任务和错题记录已完成。"
+  },
+  "sat": {
+    "label": "周六",
+    "title": "周六：第8周50分小测",
+    "words": [
+      [
+        "salt",
+        "盐",
+        "salt",
+        "I can use salt."
+      ],
+      [
+        "drinking water",
+        "饮用水",
+        "drinking water",
+        "I can use drinking water."
+      ],
+      [
+        "role",
+        "作用；角色",
+        "role",
+        "I can use role."
+      ],
+      [
+        "goods",
+        "商品；货物",
+        "goods",
+        "I can use goods."
+      ],
+      [
+        "switch-off",
+        "关闭；关掉",
+        "switch-off",
+        "I can use switch-off."
+      ],
+      [
+        "while",
+        "在……期间；当……时",
+        "while",
+        "I can use while."
+      ],
+      [
+        "tablet",
+        "平板电脑",
+        "tablet",
+        "I can use tablet."
+      ],
+      [
+        "fridge",
+        "冰箱",
+        "fridge",
+        "I can use fridge."
+      ],
+      [
+        "contribution",
+        "贡献",
+        "contribution",
+        "I can use contribution."
+      ],
+      [
+        "hero",
+        "英雄",
+        "hero",
+        "I can use hero."
+      ],
+      [
+        "pioneer",
+        "先驱；先锋",
+        "pioneer",
+        "I can use pioneer."
+      ],
+      [
+        "technology",
+        "科技；技术",
+        "technology",
+        "I can use technology."
+      ],
+      [
+        "society",
+        "社会",
+        "society",
+        "I can use society."
+      ],
+      [
+        "female",
+        "女性的；女子",
+        "female",
+        "I can use female."
+      ],
+      [
+        "admire",
+        "钦佩；赞赏",
+        "admire",
+        "I can use admire."
+      ],
+      [
+        "inspire",
+        "鼓舞；激励",
+        "inspire",
+        "I can use inspire."
+      ],
+      [
+        "possible",
+        "可能的",
+        "possible",
+        "I can use possible."
+      ],
+      [
+        "athlete",
+        "运动员",
+        "athlete",
+        "I can use athlete."
+      ],
+      [
+        "biologist",
+        "生物学家",
+        "biologist",
+        "I can use biologist."
+      ],
+      [
+        "instrument",
+        "乐器；仪器",
+        "instrument",
+        "I can use instrument."
+      ]
+    ],
+    "readingLines": [
+      "Amy is curious about technology.",
+      "She reads science books every week.",
+      "Last Sunday, she visited a museum.",
+      "There were many old devices there.",
+      "She will keep learning."
+    ],
+    "grammar": {
+      "rule": "先独立完成50分小测，再对答案。",
+      "examples": [
+        "词汇20分",
+        "语法15分",
+        "阅读15分"
+      ]
+    },
+    "quiz": [
+      [
+        "There ___ two devices on the desk.",
+        [
+          "A. is",
+          "B. are",
+          "C. be"
+        ],
+        "B. are"
+      ],
+      [
+        "She does not ___ learning.",
+        [
+          "A. stop",
+          "B. stops",
+          "C. stopped"
+        ],
+        "A. stop"
+      ],
+      [
+        "Did the story ___ you?",
+        [
+          "A. inspired",
+          "B. inspires",
+          "C. inspire"
+        ],
+        "C. inspire"
+      ]
+    ],
+    "answers": "1 B；2 A；3 C。完整试卷见第8周学习包。",
+    "readingTask": {
+      "type": "周测",
+      "passage": "完成50分小测并记录分数。",
+      "questions": [
+        "单词20分",
+        "语法15分",
+        "阅读15分"
+      ],
+      "answers": "34分为本周目标线。"
+    },
+    "parent": "只记录分数，不讲题。"
+  },
+  "sun": {
+    "label": "周日",
+    "title": "周日：第8周错词错题复盘",
+    "words": [
+      [
+        "salt",
+        "盐",
+        "salt",
+        "I can use salt."
+      ],
+      [
+        "drinking water",
+        "饮用水",
+        "drinking water",
+        "I can use drinking water."
+      ],
+      [
+        "role",
+        "作用；角色",
+        "role",
+        "I can use role."
+      ],
+      [
+        "goods",
+        "商品；货物",
+        "goods",
+        "I can use goods."
+      ],
+      [
+        "switch-off",
+        "关闭；关掉",
+        "switch-off",
+        "I can use switch-off."
+      ],
+      [
+        "while",
+        "在……期间；当……时",
+        "while",
+        "I can use while."
+      ],
+      [
+        "tablet",
+        "平板电脑",
+        "tablet",
+        "I can use tablet."
+      ],
+      [
+        "fridge",
+        "冰箱",
+        "fridge",
+        "I can use fridge."
+      ],
+      [
+        "contribution",
+        "贡献",
+        "contribution",
+        "I can use contribution."
+      ],
+      [
+        "hero",
+        "英雄",
+        "hero",
+        "I can use hero."
+      ],
+      [
+        "pioneer",
+        "先驱；先锋",
+        "pioneer",
+        "I can use pioneer."
+      ],
+      [
+        "technology",
+        "科技；技术",
+        "technology",
+        "I can use technology."
+      ],
+      [
+        "society",
+        "社会",
+        "society",
+        "I can use society."
+      ],
+      [
+        "female",
+        "女性的；女子",
+        "female",
+        "I can use female."
+      ],
+      [
+        "admire",
+        "钦佩；赞赏",
+        "admire",
+        "I can use admire."
+      ],
+      [
+        "inspire",
+        "鼓舞；激励",
+        "inspire",
+        "I can use inspire."
+      ],
+      [
+        "possible",
+        "可能的",
+        "possible",
+        "I can use possible."
+      ],
+      [
+        "athlete",
+        "运动员",
+        "athlete",
+        "I can use athlete."
+      ],
+      [
+        "biologist",
+        "生物学家",
+        "biologist",
+        "I can use biologist."
+      ],
+      [
+        "instrument",
+        "乐器；仪器",
+        "instrument",
+        "I can use instrument."
+      ]
+    ],
+    "readingLines": [
+      "I correct my real mistakes.",
+      "I check the subject and verb.",
+      "I will improve one step at a time."
+    ],
+    "grammar": {
+      "rule": "只补真实错点：10个错词、5道错题、1次作文时态检查。",
+      "examples": [
+        "原答案",
+        "正确答案",
+        "错因"
+      ]
+    },
+    "quiz": [
+      [
+        "不可数名词前可用哪个词？",
+        [
+          "A. many",
+          "B. some",
+          "C. two"
+        ],
+        "B. some"
+      ],
+      [
+        "doesn't后接什么？",
+        [
+          "A. 动词原形",
+          "B. 动词-s",
+          "C. 过去式"
+        ],
+        "A. 动词原形"
+      ],
+      [
+        "Did后接什么？",
+        [
+          "A. 动词原形",
+          "B. 过去式",
+          "C. doing"
+        ],
+        "A. 动词原形"
+      ]
+    ],
+    "answers": "1 B；2 A；3 A。",
+    "readingTask": {
+      "type": "复盘",
+      "passage": "从本周材料挑真实错题。",
+      "questions": [
+        "10个错词",
+        "5道错题",
+        "检查八句短文"
+      ],
+      "answers": "写出正确答案和错因，再填下周先补什么。"
+    },
+    "parent": "确认复盘表有5条，签名即可。"
+  }
+};
+
 const weeks = {
   week1: { label: "第1周", title: "第1周：先把基础词和小语法稳住", scoreMax: 100, tasks: week1Tasks, days: week1Data, test: ["抽查30个单词中文意思，30分。", "抽查10个单词拼写，20分。", "语法20题，20分。", "短阅读1篇5题，30分。"], quote: "第1周先别贪多。每天把单词、录音、错题做完，基础分就开始往回捡。" },
   week2: { label: "第2周", title: "第2周：接着练时态和短阅读", scoreMax: 50, tasks: week2Tasks, days: week2Data, test: ["单词中文10题，10分。", "单词拼写10题，10分。", "语法5题，15分。", "短阅读1篇5题，15分。"], quote: "第2周只求稳：每天把20个词、3道语法题、1个阅读任务和1条错题记录做完，就是在往60分靠近。" },
@@ -7434,21 +8706,22 @@ const weeks = {
   week4: { label: "第4周", title: "第4周：补过去进行时、将来表达、频率副词、连接词和五句作文", scoreMax: 50, tasks: week2Tasks, days: week4Data, test: ["单词中文10题，10分。", "单词拼写10题，10分。", "语法/方法5题，15分。", "短阅读1篇5题，15分。"], quote: "第4周开始碰作文，但只写5句。每天照着小任务走，重点还是完整、少错、能坚持。" },
   week5: { label: "第5周", title: "第5周：完成时、常见搭配、被动语态、阅读指代和六句作文", scoreMax: 50, tasks: week2Tasks, days: week5Data, test: ["单词中文10题，10分。", "单词拼写5题，10分。", "语法/方法5题，15分。", "短阅读1篇5题，15分。"], quote: "第5周只把难度抬半格：先认结构、会做基础题、能写六个完整句子。" },
   week6: { label: "第6周", title: "第6周：八下基础词、完整句、一般现在时、一般过去时、阅读定位和六句短文", scoreMax: 50, tasks: week2Tasks, days: week6Data, test: ["单词英译中10题，10分。", "单词中译英10题，10分。", "语法5题，15分。", "短阅读1篇5题，15分。"], quote: "期末45/140是起点，不是能力定论。第6周先把会做的基础题做对。" },
-  week7: { label: "第7周", title: "第7周：七八年级基础词、代词、问句、方位介词、情态动词和七句短文", scoreMax: 50, tasks: week2Tasks, days: week7Data, test: ["单词英译中10题，10分。", "单词中译英10题，10分。", "语法5题，15分。", "短阅读1篇5题，15分。"], quote: "第7周只提高半格：换基础词、练短句、把每个会做的基础题做对。" }
+  week7: { label: "第7周", title: "第7周：七八年级基础词、代词、问句、方位介词、情态动词和七句短文", scoreMax: 50, tasks: week2Tasks, days: week7Data, test: ["单词英译中10题，10分。", "单词中译英10题，10分。", "语法5题，15分。", "短阅读1篇5题，15分。"], quote: "第7周只提高半格：换基础词、练短句、把每个会做的基础题做对。" },
+  week8: { label: "第8周", title: "第8周：生活、电器、人物贡献、职业词和八句短文", scoreMax: 50, tasks: week2Tasks, days: week8Data, test: ["单词英译中10题，10分。", "单词中译英10题，10分。", "语法5题，15分。", "短阅读1篇5题，15分。"], quote: "第8周继续只加半格：短句做对、阅读找依据、八句作文先写完整。" }
 };
 
 
 
 const stateKey = "rango-english-continuous-v1";
 const syncAppName = "rango-english-continuous-progress";
-const legacyKeys = { week1: "rango-english-week1", week2: "rango-english-week2", week3: "rango-english-week3", week4: "rango-english-week4", week5: "rango-english-week5", week6: "rango-english-week6", week7: "rango-english-week7" };
-const compatibleApps = [syncAppName, "rango-english-week1-progress", "rango-english-week2-progress", "rango-english-week3-progress", "rango-english-week4-progress", "rango-english-week5-progress", "rango-english-week6-progress", "rango-english-week7-progress", "rango-english-github-pages-progress"];
+const legacyKeys = { week1: "rango-english-week1", week2: "rango-english-week2", week3: "rango-english-week3", week4: "rango-english-week4", week5: "rango-english-week5", week6: "rango-english-week6", week7: "rango-english-week7", week8: "rango-english-week8" };
+const compatibleApps = [syncAppName, "rango-english-week1-progress", "rango-english-week2-progress", "rango-english-week3-progress", "rango-english-week4-progress", "rango-english-week5-progress", "rango-english-week6-progress", "rango-english-week7-progress", "rango-english-week8-progress", "rango-english-github-pages-progress"];
 let state = loadState();
 let currentWeek = state.currentWeek || "week1";
 let currentDay = state.currentDay || weekState(currentWeek).currentDay || "mon";
 
 function esc(value) { return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#039;"); }
-function blank() { return { currentWeek: "week1", currentDay: "mon", weeks: { week1: { currentDay: "mon", weeklyScore: "", days: {} }, week2: { currentDay: "mon", weeklyScore: "", days: {} }, week3: { currentDay: "mon", weeklyScore: "", days: {} }, week4: { currentDay: "mon", weeklyScore: "", days: {} }, week5: { currentDay: "mon", weeklyScore: "", days: {} }, week6: { currentDay: "mon", weeklyScore: "", days: {} }, week7: { currentDay: "mon", weeklyScore: "", days: {} } } }; }
+function blank() { return { currentWeek: "week1", currentDay: "mon", weeks: { week1: { currentDay: "mon", weeklyScore: "", days: {} }, week2: { currentDay: "mon", weeklyScore: "", days: {} }, week3: { currentDay: "mon", weeklyScore: "", days: {} }, week4: { currentDay: "mon", weeklyScore: "", days: {} }, week5: { currentDay: "mon", weeklyScore: "", days: {} }, week6: { currentDay: "mon", weeklyScore: "", days: {} }, week7: { currentDay: "mon", weeklyScore: "", days: {} }, week8: { currentDay: "mon", weeklyScore: "", days: {} } } }; }
 function readJson(key) { try { const raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : null; } catch (e) { return null; } }
 function normWeek(input) { const src = input && typeof input === "object" ? input : {}; return { ...src, currentDay: src.currentDay || src.cur || "mon", weeklyScore: src.weeklyScore || src.score || "", days: src.days && typeof src.days === "object" ? src.days : {} }; }
 function hasData(input) { const w = normWeek(input); return Boolean(w.weeklyScore || Object.keys(w.days || {}).length); }
@@ -7462,6 +8735,7 @@ function loadState() {
   const old5 = readJson(legacyKeys.week5);
   const old6 = readJson(legacyKeys.week6);
   const old7 = readJson(legacyKeys.week7);
+  const old8 = readJson(legacyKeys.week8);
   if (!hasData(next.weeks.week1)) {
     if (hasData(old1)) next.weeks.week1 = normWeek(old1);
     else if (old2 && old2.previousWeeks && hasData(old2.previousWeeks.week1)) next.weeks.week1 = normWeek(old2.previousWeeks.week1);
@@ -7481,6 +8755,7 @@ function loadState() {
   if (!hasData(next.weeks.week5) && hasData(old5)) next.weeks.week5 = normWeek(old5);
   if (!hasData(next.weeks.week6) && hasData(old6)) next.weeks.week6 = normWeek(old6);
   if (!hasData(next.weeks.week7) && hasData(old7)) next.weeks.week7 = normWeek(old7);
+  if (!hasData(next.weeks.week8) && hasData(old8)) next.weeks.week8 = normWeek(old8);
   return next;
 }
 function weekState(key) { state.weeks ||= {}; state.weeks[key] = normWeek(state.weeks[key]); return state.weeks[key]; }
@@ -7494,7 +8769,7 @@ function summary(key) { const d = weekState(key).days || {}; const keys = Object
 function setSyncStatus(text) { document.querySelector("#syncStatus").textContent = text; }
 function encodeProgressCode(payload) { const bytes = new TextEncoder().encode(JSON.stringify(payload)); let binary = ""; bytes.forEach(b => binary += String.fromCharCode(b)); return btoa(binary); }
 function decodeProgressCode(code) { const clean = code.trim(); return JSON.parse(clean.startsWith("{") ? clean : new TextDecoder().decode(Uint8Array.from(atob(clean), c => c.charCodeAt(0)))); }
-function payload() { save(); return { app: syncAppName, version: 7, exportedAt: new Date().toISOString(), state }; }
+function payload() { save(); return { app: syncAppName, version: 8, exportedAt: new Date().toISOString(), state }; }
 function importPayload(data) {
   const imported = data && (data.state || data.store);
   if (!data || !compatibleApps.includes(data.app) || !imported || typeof imported !== "object") throw new Error("bad data");
@@ -7524,6 +8799,9 @@ function importPayload(data) {
   } else if (data.app === "rango-english-week7-progress") {
     next.weeks.week7 = normWeek(imported);
     next.currentWeek = "week7";
+  } else if (data.app === "rango-english-week8-progress") {
+    next.weeks.week8 = normWeek(imported);
+    next.currentWeek = "week8";
   } else {
     next.weeks.week1 = normWeek(imported);
     next.currentWeek = "week1";
@@ -7535,20 +8813,20 @@ function applyPayload(data) { const next = importPayload(data); if (!confirm("�
 function downloadTextFile(name, text) { const blob = new Blob([text], { type: "application/json;charset=utf-8" }); const url = URL.createObjectURL(blob); const link = document.createElement("a"); link.href = url; link.download = name; document.body.appendChild(link); link.click(); link.remove(); URL.revokeObjectURL(url); }
 async function copyText(text) { if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(text); return true; } const box = document.querySelector("#progressCode"); box.focus(); box.select(); return document.execCommand("copy"); }
 
-function renderWeekSelect() { const el = document.querySelector("#weekSelect"); el.innerHTML = Object.entries(weeks).map(([k, w]) => "<option value=\"" + k + "\">" + w.label + "</option>").join(""); el.value = currentWeek; document.querySelector("#headerWeekLabel").textContent = "八下英语 · " + plan().label + " / 第1周-第5周连续周计划"; document.querySelector("#weekTitle").textContent = plan().title; document.querySelector("#weekHint").textContent = plan().label + "内容。家长切周后，再选周几就行。"; document.querySelector("#currentWeekText").textContent = plan().label; }
+function renderWeekSelect() { const el = document.querySelector("#weekSelect"); el.innerHTML = Object.entries(weeks).map(([k, w]) => "<option value=\"" + k + "\">" + w.label + "</option>").join(""); el.value = currentWeek; document.querySelector("#headerWeekLabel").textContent = "八下英语 · " + plan().label + " / 第1周-第8周连续周计划"; document.querySelector("#weekTitle").textContent = plan().title; document.querySelector("#weekHint").textContent = plan().label + "内容。家长切周后，再选周几就行。"; document.querySelector("#currentWeekText").textContent = plan().label; }
 function renderDaySelect() { const el = document.querySelector("#daySelect"); if (!days()[currentDay]) currentDay = "mon"; el.innerHTML = Object.entries(days()).map(([k, d]) => "<option value=\"" + k + "\">" + d.label + "</option>").join(""); el.value = currentDay; }
 function renderTasks() { const data = days()[currentDay]; const ds = dayState(); document.querySelector("#dayTitle").textContent = data.title; document.querySelector("#taskList").innerHTML = plan().tasks.map((t, i) => "<label class=\"task\"><input type=\"checkbox\" data-task=\"" + i + "\" " + (ds.tasks[i] ? "checked" : "") + "><span><strong>" + esc(t[0]) + "</strong><p>" + esc(t[1]) + "</p></span></label>").join(""); document.querySelector("#mistakeNote").value = ds.mistake || ""; }
 function renderWords() { const data = days()[currentDay]; const ds = dayState(); const list = data.words.length ? data.words : allWords(); document.querySelector("#wordPanelTitle").textContent = data.words.length ? "今日20个单词" : plan().label + "复习词"; document.querySelector("#wordCards").innerHTML = list.map((w, i) => { const key = currentWeek + "-" + currentDay + "-" + w[0] + "-" + i; const oldKey = currentDay + "-" + w[0] + "-" + i; const mark = ds.words[key] || ds.words[oldKey] || ""; return "<article class=\"word-card\"><div class=\"word-top\"><strong>" + esc(w[0]) + "</strong><span class=\"tip\">" + esc(w[2]) + "</span></div><div>" + esc(w[1]) + "</div><p class=\"example\">" + esc(w[3]) + "</p><div class=\"word-actions\"><button data-word=\"" + esc(key) + "\" data-mark=\"ok\" class=\"" + (mark === "ok" ? "done" : "") + "\">会了</button><button data-word=\"" + esc(key) + "\" data-mark=\"hard\" class=\"" + (mark === "hard" ? "hard" : "") + "\">不会</button></div></article>"; }).join(""); }
 function renderPractice() { const data = days()[currentDay]; const ds = dayState(); const lines = document.querySelector("#readingLinesPanel"); const taskPanel = document.querySelector("#readingTaskPanel"); lines.hidden = !data.readingLines; document.querySelector("#readingLinesBox").innerHTML = data.readingLines ? "<ol class=\"reading-lines\">" + data.readingLines.map(x => "<li>" + esc(x) + "</li>").join("") + "</ol>" : ""; document.querySelector("#grammarBox").innerHTML = "<div class=\"grammar-rule\">" + esc(data.grammar.rule) + "</div><ul class=\"simple-list\">" + data.grammar.examples.map(x => "<li>" + esc(x) + "</li>").join("") + "</ul>"; document.querySelector("#quizTitle").textContent = data.quiz.length <= 3 ? "语法3题" : "今日小练习"; document.querySelector("#quizBox").innerHTML = data.quiz.map((q, i) => "<div class=\"quiz-item\"><strong>" + (i + 1) + ". " + esc(q[0]) + "</strong><div class=\"quiz-options\">" + q[1].map(o => "<button class=\"quiz-option " + (ds.answers[i] === o ? "selected" : "") + "\" data-question=\"" + i + "\" data-answer=\"" + esc(o) + "\">" + esc(o) + "</button>").join("") + "</div></div>").join(""); if (data.readingTask) { const r = data.readingTask; taskPanel.hidden = false; document.querySelector("#readingTaskBox").innerHTML = "<p class=\"tag\">" + esc(r.type) + "</p><p class=\"passage\">" + esc(r.passage) + "</p><ol class=\"simple-list\">" + r.questions.map(x => "<li>" + esc(x).replace(/^\d+\.\s*/, "") + "</li>").join("") + "</ol><details class=\"answer-box\"><summary>查看答案</summary><p>" + esc(r.answers) + "</p></details>"; } else { taskPanel.hidden = true; document.querySelector("#readingTaskBox").innerHTML = ""; } document.querySelector("#quizResult").textContent = ds.quizResult || ""; }
 function renderParent() { const ds = dayState(); const ws = weekState(currentWeek); const done = Object.values(ds.tasks || {}).filter(Boolean).length; const okWords = Object.values(ds.words || {}).filter(v => v === "ok").length; const hardWords = Object.values(ds.words || {}).filter(v => v === "hard").length; const checks = [[plan().label + "今日任务", done + "/5 项完成", done >= 5], ["单词", "已标记会了 " + okWords + " 个，不会 " + hardWords + " 个", okWords >= 15], ["朗读录音", ds.record ? "孩子已点完成录音" : "还没点完成录音", ds.record], ["错题本", ds.mistake ? "已保存错题记录" : "今天还没写错题", Boolean(ds.mistake)], ["周测分数", ws.weeklyScore ? ws.weeklyScore + " 分" : "周六再填", Boolean(ws.weeklyScore)]]; document.querySelector("#parentChecklist").innerHTML = checks.map(x => "<div class=\"parent-item " + (x[2] ? "ok" : "") + "\"><strong>" + x[0] + "</strong><br>" + x[1] + "</div>").join(""); document.querySelector("#weeklyTestList").innerHTML = plan().test.map(x => "<li>" + esc(x) + "</li>").join(""); document.querySelector("#weeklyScoreLabel").textContent = plan().label + "小测分数"; document.querySelector("#weeklyScore").max = plan().scoreMax; document.querySelector("#weeklyScore").placeholder = plan().scoreMax === 50 ? "例如 36" : "例如 62"; document.querySelector("#weeklyScore").value = ws.weeklyScore || ""; document.querySelector("#kidQuote").textContent = plan().quote; renderContinuitySummary(); }
 function renderContinuitySummary() {
-  const weekKeys = ["week1", "week2", "week3", "week4", "week5", "week6", "week7"];
+  const weekKeys = ["week1", "week2", "week3", "week4", "week5", "week6", "week7", "week8"];
   const totals = weekKeys.map(summary);
   const totalComplete = totals.reduce((n, item) => n + item.complete, 0);
   const totalActive = totals.reduce((n, item) => n + item.active, 0);
   const totalMistakes = totals.reduce((n, item) => n + item.mistakes, 0);
   const scoreText = totals.map((item, index) => "第" + (index + 1) + "周：" + (item.score ? item.score + " 分" : "未填")).join("；");
-  document.querySelector("#continuitySummary").innerHTML = "<div class=\"continuity-card wide\"><strong>连续七周记录放在一起</strong><span>切到第1周、第2周、第3周、第4周、第5周、第6周、第7周或第6周，打卡、错题、7次周测分数都会存在同一个学习记录里。</span></div><div class=\"continuity-card\"><strong>" + totalComplete + " 天</strong><span>七周累计完成打卡</span></div><div class=\"continuity-card\"><strong>" + totalActive + " 天</strong><span>五周有学习记录</span></div><div class=\"continuity-card\"><strong>" + totalMistakes + " 条</strong><span>七周累计错题</span></div><div class=\"continuity-card wide\"><strong>五周周测分数</strong><span>" + scoreText + "</span></div>";
+  document.querySelector("#continuitySummary").innerHTML = "<div class=\"continuity-card wide\"><strong>连续八周记录放在一起</strong><span>切到第1周、第2周、第3周、第4周、第5周、第6周、第7周或第8周，打卡、错题、8次周测分数都会存在同一个学习记录里。</span></div><div class=\"continuity-card\"><strong>" + totalComplete + " 天</strong><span>八周累计完成打卡</span></div><div class=\"continuity-card\"><strong>" + totalActive + " 天</strong><span>八周有学习记录</span></div><div class=\"continuity-card\"><strong>" + totalMistakes + " 条</strong><span>八周累计错题</span></div><div class=\"continuity-card wide\"><strong>八周周测分数</strong><span>" + scoreText + "</span></div>";
 }
 function updateDoneCount() { const ds = dayState(); document.querySelector("#doneCount").textContent = Object.values(ds.tasks || {}).filter(Boolean).length + (ds.record ? 1 : 0) + (ds.mistake ? 1 : 0); }
 function renderAll() { renderWeekSelect(); renderDaySelect(); renderTasks(); renderWords(); renderPractice(); renderParent(); updateDoneCount(); }
@@ -7563,12 +8841,12 @@ document.querySelector("#checkQuiz").addEventListener("click", () => { const dat
 document.querySelector("#recordDone").addEventListener("click", () => { dayState().record = true; save(); renderParent(); updateDoneCount(); alert("已记录。现在去错题本写1-3道错题。"); });
 document.querySelector("#saveMistake").addEventListener("click", () => { dayState().mistake = document.querySelector("#mistakeNote").value.trim(); save(); renderParent(); updateDoneCount(); alert("错题已保存。"); });
 document.querySelector("#saveScore").addEventListener("click", () => { weekState(currentWeek).weeklyScore = document.querySelector("#weeklyScore").value.trim(); save(); renderParent(); });
-document.querySelector("#downloadBackup").addEventListener("click", () => { const date = new Date().toISOString().slice(0, 10); downloadTextFile("然哥英语连续七周学习记录-" + date + ".json", JSON.stringify(payload(), null, 2)); setSyncStatus("连续七周学习记录已下载。换手机时，把这个文件发到新手机，再点“一键导入学习记录”。"); });
+document.querySelector("#downloadBackup").addEventListener("click", () => { const date = new Date().toISOString().slice(0, 10); downloadTextFile("然哥英语连续八周学习记录-" + date + ".json", JSON.stringify(payload(), null, 2)); setSyncStatus("连续八周学习记录已下载。换手机时，把这个文件发到新手机，再点“一键导入学习记录”。"); });
 document.querySelector("#chooseBackup").addEventListener("click", () => document.querySelector("#backupFile").click());
 document.querySelector("#backupFile").addEventListener("change", async e => { const file = e.target.files && e.target.files[0]; e.target.value = ""; if (!file) return; try { applyPayload(JSON.parse(await file.text())); } catch (err) { setSyncStatus("这个文件不能导入。新版、旧第1周、旧第2周连续版、旧第3周独立版、旧第4周的学习记录文件都可以；请确认选的是正确备份文件。"); } });
-document.querySelector("#exportProgress").addEventListener("click", async () => { const code = encodeProgressCode(payload()); document.querySelector("#progressCode").value = code; try { const copied = await copyText(code); setSyncStatus(copied ? "连续五周进度码已生成并复制。发给家长后，在家长手机导入即可。" : "进度码已生成。请手动复制后发给家长。"); } catch (e) { setSyncStatus("进度码已生成。请手动复制后发给家长。"); } });
+document.querySelector("#exportProgress").addEventListener("click", async () => { const code = encodeProgressCode(payload()); document.querySelector("#progressCode").value = code; try { const copied = await copyText(code); setSyncStatus(copied ? "连续八周进度码已生成并复制。发给家长后，在家长手机导入即可。" : "进度码已生成。请手动复制后发给家长。"); } catch (e) { setSyncStatus("进度码已生成。请手动复制后发给家长。"); } });
 document.querySelector("#importProgress").addEventListener("click", () => { const code = document.querySelector("#progressCode").value.trim(); if (!code) return setSyncStatus("请先粘贴孩子手机发来的进度码。"); try { applyPayload(decodeProgressCode(code)); } catch (e) { setSyncStatus("进度码不能识别。请确认整段复制，没有少字或多空格。旧第1周/第2周连续版/第3周独立版/第4周进度码也可以导入。"); } });
-document.querySelector("#resetAll").addEventListener("click", () => { if (!confirm("确定清空这台手机/电脑上的连续七周学习记录吗？旧版记录不会一起删除。")) return; localStorage.removeItem(stateKey); state = blank(); currentWeek = "week1"; currentDay = "mon"; renderAll(); });
+document.querySelector("#resetAll").addEventListener("click", () => { if (!confirm("确定清空这台手机/电脑上的连续八周学习记录吗？旧版记录不会一起删除。")) return; localStorage.removeItem(stateKey); state = blank(); currentWeek = "week1"; currentDay = "mon"; renderAll(); });
 save();
 renderAll();
 
